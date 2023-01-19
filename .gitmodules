@@ -1,3 +1,3 @@
-[submodule "Tools/KFModTool/libimagequant"]
-	path = Tools/KFModTool/libimagequant
+[submodule "libimagequant"]
+	path = libimagequant
 	url = https://github.com/ImageOptim/libimagequant.git
