@@ -1,7 +1,7 @@
 #ifndef GAMEEXE_H
 #define GAMEEXE_H
 
-#include "kf2/text.h"
+#include "types/kf2/text.h"
 #include "kfmtdatahandler.h"
 
 class GameEXE : public KFMTDataHandler

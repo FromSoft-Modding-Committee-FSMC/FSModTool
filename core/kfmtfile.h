@@ -1,6 +1,7 @@
 #ifndef KFMTFILE_H
 #define KFMTFILE_H
 
+#include "core/kfmterror.h"
 #include <QDir>
 #include <QRegularExpression>
 #include <QStringView>
@@ -14,18 +15,20 @@ public:
     enum class ContainerType : uint8_t
     {
         Folder,            ///< Dummy folder container
+        MIMList,           ///< List of MIM files (KF1 CHRX.MIM)
         MIX_HasSizes,      ///< MIX with file size before each file
         MIX_NoSizes,       ///< MIX with just TIMs/TMDs back-to-back
-        MIX_MIMCollection, ///< MIX for MIM files with 06 or 07 at the beginning
         T                  ///< KF2 T file
     };
 
-    enum class FileType : uint8_t
+    enum class FileFormat : uint8_t
     {
-        Folder, ///< Dummy file type to represent a folder for file list organization purposes
-        MIX,    ///< MIX container
-        Raw,    ///< Normal file
-        T       ///< T container
+        Folder,  ///< Dummy file type to represent a folder for file list organization purposes
+        MIMList, ///< KF1 MIM list (CHRX.MIM files)
+        MIX,     ///< MIX container
+        Raw,     ///< Normal file
+        Root,    ///< Root of the FSMTFile tree
+        T        ///< T container
     };
 
     enum class DataType : uint8_t
@@ -33,7 +36,6 @@ public:
         // Generic
         Container,
         GameDB,
-        GameEXE,
         MapTile,
         MapTilemap,
         MapDB,
@@ -53,30 +55,32 @@ public:
 
         // KF2 specific
         KF2_ArmourParams,
+        KF2_GameExec,
         KF2_LevelCurve,
         KF2_MagicParams,
+        KF2_ModelPack_MO,
+        KF2_ModelPack_TMD,
         KF2_ObjectClasses,
-        KF2_WeaponParams
+        KF2_SoundEffectParams,
+        KF2_TileRenderParams,
+        KF2_WeaponParams,
+
+        // FSModTool specific
+        Root
     };
 
     /*!
-     * \brief Standard KFMTFile Constructor
-     * \param srcDir Path to the source directory for the game files.
-     * \param path Path to this file in the source directory.
-     * \param fileType Type of file (MIX, Raw or T).
-     * \param dataType Optional specifier for the file's data type. If left unspecified, the data type will be automatically detected.
-     */
-    KFMTFile(const QString& path, const KFMTFileListEntry* fileListEntry);
-
-    /*!
      * \brief Constructor for making files from raw data.
-     * \param srcPath Path to the container for this file (incl. source directory) + file number.
-     * \param data Byte array with data for this file.
-     * \param dataType Optional specifier for the file's data type. If left unspecified, the data type will be automatically detected.
+     * \param srcPath File path.
+     * \param data File data.
+     * \param parent Pointer to parent file (or root node).
+     * \param fileType Type of file.
+     * \param dataType Type of data contained in the file.
+     * \param prettyName Pretty name for the file.
      */
-    KFMTFile(const QString& path, const QByteArray& data, const KFMTFileListEntry* fileListEntry)
-        : m_path(path), m_fileListEntry(fileListEntry), m_rawData(data)
-    {}
+    KFMTFile(const QString& name, const QByteArray& data, KFMTFile* const parent,
+             const FileFormat fileType = FileFormat::Raw,
+             const DataType dataType = DataType::Unknown, const QString& prettyName = "");
 
     /*!
      * \brief Method to extract files from a container onto a directory.
@@ -84,26 +88,144 @@ public:
      */
     void extractTo(const QDir& outDir);
 
-    [[nodiscard]] DataType dataType() const;
-    [[nodiscard]] const QString& fileExtension() const;
-    [[nodiscard]] auto fileName() const;
-    [[nodiscard]] auto filePath() const;
-    [[nodiscard]] FileType fileType() const;
-    [[nodiscard]] uint32_t indexInContainer();
-    [[nodiscard]] inline KFMTFile* operator[](size_t index)
-    {
-        return index < m_subFiles.size() ? &m_subFiles[index] : nullptr;
-    }
-    [[nodiscard]] size_t subFileCount() const { return m_subFiles.size(); }
+    /*!
+     * \brief Returns child count for containers.
+     */
+    [[nodiscard]] inline uint32_t childCount() const { return static_cast<uint32_t>(m_subFiles.size()); }
 
+    inline void createChild(const QString& name, const QByteArray& data,
+                            const FileFormat fileType = FileFormat::Raw,
+                            const DataType dataType = DataType::Unknown,
+                            const QString& prettyName = "")
+    {
+        m_subFiles.emplace_back(name, data, this, fileType, dataType, prettyName);
+    }
+
+    /*!
+     * \brief Gets this file's data type.
+     */
+    [[nodiscard]] inline DataType dataType() const { return m_dataType; }
+
+    /*!
+     * \brief Returns an appropriate extension for the file.
+     */
+    [[nodiscard]] const QString& extension() const;
+
+    /*!
+     * \brief Gets this file's format.
+     */
+    [[nodiscard]] inline FileFormat format() const { return m_fileType; }
+
+    /*!
+     * \brief Gets this file's name.
+     */
+    [[nodiscard]] inline const QString& name() const { return m_name; }
+
+    /*!
+     * \brief Gets this file's parent.
+     */
+    [[nodiscard]] inline const KFMTFile* parent() const { return m_parent; }
+
+    [[nodiscard]] inline KFMTFile* parent() { return m_parent; }
+    
+    [[nodiscard]] inline const QString& prettyName() const
+    {
+        if (m_prettyName.isEmpty()) return m_name;
+        else return m_prettyName;
+    }
+
+    inline void resetRoot()
+    {
+        fsmt_assert(dataType() == DataType::Root, "KFMTFile::resetRoot: Called for non-root file!");
+        m_subFiles.clear();
+    }
+
+    /*!
+     * \brief Setter for the data type.
+     * \param dataType New data type.
+     */
+    inline void setDataType(const DataType dataType) { m_dataType = dataType; }
+
+    /*!
+     * \brief Setter for the file format.
+     * \param fileFormat New file format.
+     */
+    inline void setFileFormat(const FileFormat fileFormat)
+    {
+        m_fileType = fileFormat;
+        
+        switch (fileFormat)
+        {
+            case FileFormat::MIMList: loadMIMList(); break;
+            case FileFormat::MIX: loadMIX(); break;
+            case FileFormat::T: loadT(); break;
+            default: break;
+        }
+    }
+
+    /*!
+     * \brief Setter for the file name.
+     * \param name New file name.
+     */
+    inline void setName(const QString& name) { m_name = name; }
+
+    /*!
+     * \brief Setter for the pretty name.
+     * \param prettyName New pretty name.
+     */
+    inline void setPrettyName(const QString& prettyName) { m_prettyName = prettyName; }
+
+    /*!
+     * \brief Writes the file to a given output directory.
+     * \param outDir Output directory
+     */
     void writeFile(const QDir& outDir);
 
+    [[nodiscard]] KFMTFile* operator[](size_t index)
+    {
+        if (index >= m_subFiles.size()) return nullptr;
+        auto i = m_subFiles.begin();
+        std::advance(i, index);
+        return &*i;
+    }
+
+    [[nodiscard]] KFMTFile* operator[](const QStringView& name)
+    {
+        QList<QStringView> pathTree {name};
+        if (name.contains('/'))
+            pathTree = name.split('/');
+        
+        KFMTFile* result = this;
+        for (auto& level : pathTree)
+        {
+            KFMTFile* old = result;
+            for (auto& file : result->m_subFiles)
+                if (file.m_name == level)
+                {
+                    result = &file;
+                    break;
+                }
+            if (result == old) // If we didn't find this level, we bail
+                return nullptr;
+        }
+        
+        if (result == this)
+            return nullptr;
+        
+        return result;
+    }
+
 private:
-    const QString m_path;
-    const KFMTFileListEntry* const m_fileListEntry;
+    QString m_name;
 
 public:
-    QByteArray m_rawData;
+    QByteArray m_data;
+
+private:
+    KFMTFile* const m_parent;
+    QString m_prettyName;
+    FileFormat m_fileType;
+    DataType m_dataType;
 
 private:
     /*!
@@ -112,16 +234,20 @@ private:
      */
     void recalculateChecksum();
 
-    void loadMIX(QFile& fileHandle);
-    void loadT(QFile& fileHandle);
+    void loadMIMList();
+    void loadMIX();
+    void loadT();
+    void writeMIMList(QFile& fileHandle);
     void writeMIX(QFile& fileHandle);
     void writeT(QFile& fileHandle);
 
-    uint32_t m_mixMimSignature; ///< Signature to write in case type == Type::MIMCollection
-
     // Container specific stuff
-    ContainerType containerType;
-    std::vector<KFMTFile> m_subFiles; ///< Vector of subfiles if this file is a container
+    ContainerType m_containerType;
+    // This used to be a std::vector but now that files have pointers to their parents, a realloc on
+    // insertion would make a file's paren pointer stale. This was causing a crash as soon as one
+    // would try to expand the CD folder in KF2J. Now we use list which should have a negligible
+    // performance loss in this case and doesn't cause reallocs, keeping the parent pointers valid.
+    std::list<KFMTFile> m_subFiles; ///< List of subfiles if this file is a container
     /*!
      * \brief Maps a T file's original file numbers to the true file numbers.
      * This is necessary because T files usually have many file numbers that point to the same
@@ -129,58 +255,12 @@ private:
      * when rebuilding a T file it is necessary to rebuild the file offset table with the same
      * "duplicate order" as the original.
      */
-    std::unique_ptr<std::map<uint32_t, uint32_t>> m_tFileMap;
+    std::unique_ptr<std::map<uint16_t, uint16_t>> m_tFileMap;
 
     // FileListModel needs access to the subFiles member.
     friend class FileListModel;
     // KFMTCore needs to be able to force set data and file types.
     friend class KFMTCore;
 };
-
-struct KFMTFileListEntry
-{
-    constexpr KFMTFileListEntry(const QStringView path, const QStringView prettyName,
-                                const KFMTFile::FileType fileType,
-                                const KFMTFile::DataType dataType)
-        : m_path(path), m_prettyName(prettyName), m_fileType(fileType), m_dataType(dataType)
-    {}
-
-    constexpr KFMTFileListEntry(const QStringView path, const KFMTFile::FileType fileType)
-        : m_path(path), m_prettyName(), m_fileType(fileType),
-          m_dataType(KFMTFile::DataType::Container)
-    {
-        if (fileType == KFMTFile::FileType::Raw)
-            throw "KFMTFileListEntry container-specific constructor used for non-container file.";
-    }
-
-    const QStringView m_path;
-    const QStringView m_prettyName;
-    const KFMTFile::FileType m_fileType;
-    const KFMTFile::DataType m_dataType;
-    [[nodiscard]] inline auto prettyName() const
-    {
-        return (m_prettyName.empty()) ? m_path : m_prettyName;
-    }
-};
-
-inline KFMTFile::DataType KFMTFile::dataType() const
-{
-    return m_fileListEntry->m_dataType;
-}
-
-inline auto KFMTFile::fileName() const
-{
-    return m_fileListEntry->prettyName();
-}
-
-inline auto KFMTFile::filePath() const
-{
-    return m_fileListEntry->prettyName();
-}
-
-inline KFMTFile::FileType KFMTFile::fileType() const
-{
-    return m_fileListEntry->m_fileType;
-}
 
 #endif // KFMTFILE_H

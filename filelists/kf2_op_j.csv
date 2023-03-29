@@ -1,0 +1,6 @@
+FSMTFileList,v,0,1,
+FILES,,,,
+Path,FileType,DataType,PrettyName
+OP,Folder,Container,
+OP/ED.D,MIX,Container,
+OP/OP.D,MIX,Container,

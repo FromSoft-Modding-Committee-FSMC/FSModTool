@@ -1,5 +1,5 @@
 #include "objectinstancetablemodel.h"
-#include "platform/psx.h"
+#include "types/ps1/fixedp.h"
 #include "utilities.h"
 
 QVariant ObjectInstanceTableModel::data(const QModelIndex &index, int role) const
@@ -18,7 +18,7 @@ QVariant ObjectInstanceTableModel::data(const QModelIndex &index, int role) cons
                    + KF2::getObjectName(object->ID) + ")";
         case 5:
             return QString::number(object->ZRotation) + " ("
-                   + QString::number(PSX::fromAngle(object->ZRotation)) + "°)";
+                   + QString::number(PS1::fromAngle(object->ZRotation)) + "°)";
         case 6: return QString::number(object->FineWEXPos);
         case 7: return QString::number(object->FineNSYPos);
         case 8: return QString::number(object->FineZPos);
@@ -75,7 +75,7 @@ bool ObjectInstanceTableModel::setData(const QModelIndex &index, const QVariant 
         case 5:
             if (value.toString().right(1) == "°" || value.toString().right(1) == "º"
                 || value.toString().right(1) == "ª")
-                uShortValue = static_cast<uint16_t>(PSX::toAngle(value.toString().chopped(1).toUInt()));
+                uShortValue = static_cast<uint16_t>(PS1::toAngle(value.toString().chopped(1).toUInt()));
             else
                 uShortValue %= 4096;
             object->ZRotation = uShortValue;

@@ -1,5 +1,5 @@
 #include "entitystatetablemodel.h"
-#include "kf2/entity.h"
+#include "types/kf2/entity.h"
 
 QVariant EntityStateTableModel::headerData(int section, Qt::Orientation orientation, int role) const
 {

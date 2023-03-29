@@ -5,31 +5,31 @@
 Map::Map(KFMTFile& file1, KFMTFile& file2, KFMTFile& file3)
     : KFMTDataHandler(file1), mapDB(file2), mapScript(file3)
 {
-    tileMap = &Utilities::as<KF2::MetaTile>(file.m_rawData, 4);
+    tileMap = &Utilities::as<KF2::MetaTile>(file.m_data, 4);
 
-    QDataStream mapDBStream(mapDB.m_rawData);
+    QDataStream mapDBStream(mapDB.m_data);
     mapDBStream.setByteOrder(QDataStream::LittleEndian);
     uint32_t sectionSize;
 
     mapDBStream >> sectionSize; // Read entity class declaration + state info section size
-    entityClasses = &Utilities::as<KF2::EntityClass>(mapDB.m_rawData,
+    entityClasses = &Utilities::as<KF2::EntityClass>(mapDB.m_data,
                                                               mapDBStream.device()->pos());
     mapDBStream.skipRawData(sectionSize);
 
     entityStateBlob = reinterpret_cast<uint8_t*>(entityClasses + entityClassesSize);
 
     mapDBStream >> sectionSize; // Read entity instance declaration section size
-    entityInstances = &Utilities::as<KF2::EntityInstance>(mapDB.m_rawData,
+    entityInstances = &Utilities::as<KF2::EntityInstance>(mapDB.m_data,
                                                                    mapDBStream.device()->pos());
     mapDBStream.skipRawData(sectionSize);
 
     mapDBStream >> sectionSize; // Read object instance declaration section size
-    objectInstances = &Utilities::as<KF2::ObjectInstance>(mapDB.m_rawData,
+    objectInstances = &Utilities::as<KF2::ObjectInstance>(mapDB.m_data,
                                                                    mapDBStream.device()->pos());
     mapDBStream.skipRawData(sectionSize);
 
     mapDBStream >> sectionSize; // Read VFX instance declaration section size
-    vfxInstances = &Utilities::as<KF2::VFX>(mapDB.m_rawData, mapDBStream.device()->pos());
+    vfxInstances = &Utilities::as<KF2::VFX>(mapDB.m_data, mapDBStream.device()->pos());
     mapDBStream.skipRawData(sectionSize);
 }
 

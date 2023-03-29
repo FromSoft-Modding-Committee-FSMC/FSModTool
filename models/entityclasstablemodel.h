@@ -2,7 +2,7 @@
 #define ENTITYCLASSTABLEMODEL_H
 
 #include "datahandlers/map.h"
-#include "kf2/entity.h"
+#include "types/kf2/entity.h"
 #include <QAbstractTableModel>
 
 class EntityClassTableModel : public QAbstractTableModel

@@ -7,14 +7,14 @@
 
 Model::Model(KFMTFile& modelFile) : KFMTDataHandler(modelFile)
 {
-    if (core.currentGame() == KFMTCore::SimpleGame::KF1 && Utilities::fileIsMIM(modelFile.m_rawData))
-        loadMIM(modelFile.m_rawData);
-    else if (Utilities::fileIsMO(modelFile.m_rawData))
-        loadMO(modelFile.m_rawData);
-    else if (Utilities::fileIsRTMD(modelFile.m_rawData))
-        loadRTMD(modelFile.m_rawData);
-    else if (Utilities::fileIsTMD(modelFile.m_rawData))
-        loadTMD(modelFile.m_rawData);
+    if (core.currentGame() == KFMTCore::SimpleGame::KF1 && Utilities::fileIsMIM(modelFile.m_data))
+        loadMIM(modelFile.m_data);
+    else if (Utilities::fileIsMO(modelFile.m_data))
+        loadMO(modelFile.m_data);
+    else if (Utilities::fileIsRTMD(modelFile.m_data))
+        loadRTMD(modelFile.m_data);
+    else if (Utilities::fileIsTMD(modelFile.m_data))
+        loadTMD(modelFile.m_data);
     else
         KFMTError::error(QStringLiteral("Model: Tried to make a model from an unknown file type."));
 }

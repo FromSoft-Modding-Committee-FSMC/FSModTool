@@ -1,0 +1,1456 @@
+FSMTFileList,v,0,1
+FILES,,,
+Path,FileType,DataType,PrettyName
+CD,Folder,Container,
+CD/COM,Folder,Container,
+CD/COM/FDAT.T,T,Container,
+CD/COM/FDAT.T/0,Raw,MapTilemap,Western Shore Tilemap
+CD/COM/FDAT.T/1,Raw,MapDB,Western Shore Map DB
+CD/COM/FDAT.T/2,Raw,MapScript,Western Shore Script
+CD/COM/FDAT.T/3,Raw,MapTilemap,Garrison Tilemap
+CD/COM/FDAT.T/4,Raw,MapDB,Garrison Map DB
+CD/COM/FDAT.T/5,Raw,MapScript,Garrison Script
+CD/COM/FDAT.T/6,Raw,MapTilemap,Central Village Tilemap
+CD/COM/FDAT.T/7,Raw,MapDB,Central Village Map DB
+CD/COM/FDAT.T/8,Raw,MapScript,Central Village Script
+CD/COM/FDAT.T/9,Raw,MapTilemap,East Village Tilemap
+CD/COM/FDAT.T/10,Raw,MapDB,East Village Map DB
+CD/COM/FDAT.T/11,Raw,MapScript,East Village Script
+CD/COM/FDAT.T/12,Raw,MapTilemap,Cathedral Tilemap
+CD/COM/FDAT.T/13,Raw,MapDB,Cathedral Map DB
+CD/COM/FDAT.T/14,Raw,MapScript,Cathedral Script
+CD/COM/FDAT.T/15,Raw,MapTilemap,Big Mine Tilemap
+CD/COM/FDAT.T/16,Raw,MapDB,Big Mine Map DB
+CD/COM/FDAT.T/17,Raw,MapScript,Big Mine Script
+CD/COM/FDAT.T/18,Raw,MapTilemap,Necron's Coliseum Tilemap
+CD/COM/FDAT.T/19,Raw,MapDB,Necron's Coliseum Map DB
+CD/COM/FDAT.T/20,Raw,MapScript,Necron's Coliseum Script
+CD/COM/FDAT.T/21,Raw,MapTilemap,Guyra's Lair Tilemap
+CD/COM/FDAT.T/22,Raw,MapDB,Guyra's Lair Map DB
+CD/COM/FDAT.T/23,Raw,MapScript,Guyra's Lair Script
+CD/COM/FDAT.T/24,Raw,MapTilemap,Debug Map Tilemap
+CD/COM/FDAT.T/25,Raw,MapDB,Debug Map Map DB
+CD/COM/FDAT.T/26,Raw,MapScript,Debug Map Script
+CD/COM/FDAT.T/27,Raw,TextureDB,Texture Database
+CD/COM/FDAT.T/28,MIX,Container,Game Database
+CD/COM/FDAT.T/28/0,Raw,KF2_ObjectClasses,Object Classes
+CD/COM/FDAT.T/28/1,Raw,KF2_WeaponParams,Weapon Parameters
+CD/COM/FDAT.T/28/2,Raw,KF2_ArmourParams,Armour Parameters
+CD/COM/FDAT.T/28/3,Raw,KF2_LevelCurve,Level Curve
+CD/COM/FDAT.T/28/4,Raw,KF2_MagicParams,Magic Parameters
+CD/COM/FDAT.T/28/5,Raw,KF2_TileRenderParams,Tile Render Parameters
+CD/COM/FDAT.T/28/6,Raw,KF2_SoundEffectParams,Sound Effect Parameters
+CD/COM/FDAT.T/28/7,Raw,KF2_ModelPack_MO,Magic/Effect Models
+CD/COM/FDAT.T/28/8,Raw,KF2_ModelPack_TMD,UI Models
+CD/COM/FDAT.T/29,Raw,Model,Dagger Viewmodel
+CD/COM/FDAT.T/30,Raw,Model,Short Sword Viewmodel
+CD/COM/FDAT.T/31,Raw,Model,Knight Sword Viewmodel
+CD/COM/FDAT.T/32,Raw,Model,Morning Star Viewmodel
+CD/COM/FDAT.T/33,Raw,Model,Battle Hammer Viewmodel
+CD/COM/FDAT.T/34,Raw,Model,Bastard Sword Viewmodel
+CD/COM/FDAT.T/35,Raw,Model,Crescent Axe Viewmodel
+CD/COM/FDAT.T/36,Raw,Model,Flame Sword Viewmodel
+CD/COM/FDAT.T/37,Raw,Model,Shiden Viewmodel
+CD/COM/FDAT.T/38,Raw,Model,Spider Viewmodel
+CD/COM/FDAT.T/39,Raw,Model,Ice Blade Viewmodel
+CD/COM/FDAT.T/40,Raw,Model,Seath's Sword Viewmodel
+CD/COM/FDAT.T/41,Raw,Model,Moonlight Sword Viewmodel
+CD/COM/FDAT.T/42,Raw,Model,Dark Slayer Viewmodel
+CD/COM/FDAT.T/43,Raw,Model,Bow Viewmodel
+CD/COM/FDAT.T/44,Raw,Model,Arbalest Viewmodel
+CD/COM/ITEM.T,T,Container,
+CD/COM/ITEM.T/0,Raw,Model,Dagger Model
+CD/COM/ITEM.T/1,Raw,Model,Short Sword Model
+CD/COM/ITEM.T/2,Raw,Model,Knight Sword Model
+CD/COM/ITEM.T/3,Raw,Model,Morning Star Model
+CD/COM/ITEM.T/4,Raw,Model,Battle Hammer Model
+CD/COM/ITEM.T/5,Raw,Model,Bastard Sword Model
+CD/COM/ITEM.T/6,Raw,Model,Crescent Axe Model
+CD/COM/ITEM.T/7,Raw,Model,Flame Sword Model
+CD/COM/ITEM.T/8,Raw,Model,Shiden Model
+CD/COM/ITEM.T/9,Raw,Model,Spider Model
+CD/COM/ITEM.T/10,Raw,Model,Ice Blade Model
+CD/COM/ITEM.T/11,Raw,Model,Seath's Sword Model
+CD/COM/ITEM.T/12,Raw,Model,Moonlight Sword Model
+CD/COM/ITEM.T/13,Raw,Model,Dark Slayer Model
+CD/COM/ITEM.T/14,Raw,Model,Bow Model
+CD/COM/ITEM.T/15,Raw,Model,Arbalest Model
+CD/COM/ITEM.T/16,Raw,Model,Iron Mask Model
+CD/COM/ITEM.T/17,Raw,Model,Knight Helm Model
+CD/COM/ITEM.T/18,Raw,Model,Great Helm Model
+CD/COM/ITEM.T/19,Raw,Model,Blood Crown Model
+CD/COM/ITEM.T/20,Raw,Model,Lightning Helm Model
+CD/COM/ITEM.T/21,Raw,Model,Seath's Helm Model
+CD/COM/ITEM.T/22,Raw,Model,Breast Plate Model
+CD/COM/ITEM.T/23,Raw,Model,Knight Plate Model
+CD/COM/ITEM.T/24,Raw,Model,Ice Armor Model
+CD/COM/ITEM.T/25,Raw,Model,Dark Armor Model
+CD/COM/ITEM.T/26,Raw,Model,Seath's Armor Model
+CD/COM/ITEM.T/27,Raw,Model,Leather Shield Model
+CD/COM/ITEM.T/28,Raw,Model,Large Shield Model
+CD/COM/ITEM.T/29,Raw,Model,Moon Guard Model
+CD/COM/ITEM.T/30,Raw,Model,Crystal Guard Model
+CD/COM/ITEM.T/31,Raw,Model,Skull Shield Model
+CD/COM/ITEM.T/32,Raw,Model,Seath's Shield Model
+CD/COM/ITEM.T/33,Raw,Model,Iron Gloves Model
+CD/COM/ITEM.T/34,Raw,Model,Stone Hands Model
+CD/COM/ITEM.T/35,Raw,Model,Silver Arms Model
+CD/COM/ITEM.T/36,Raw,Model,Demon's Hands Model
+CD/COM/ITEM.T/37,Raw,Model,Ruinous Gloves Model
+CD/COM/ITEM.T/38,Raw,Model,Iron Boots Model
+CD/COM/ITEM.T/39,Raw,Model,Leg Guarders Model
+CD/COM/ITEM.T/40,Raw,Model,Silver Boots Model
+CD/COM/ITEM.T/41,Raw,Model,Death Walkers Model
+CD/COM/ITEM.T/42,Raw,Model,Ruinous Boots Model
+CD/COM/ITEM.T/43,Raw,Model,Scorpion's Bracelet Model
+CD/COM/ITEM.T/44,Raw,Model,Seath's Tear Model
+CD/COM/ITEM.T/45,Raw,Model,Seath's Bracelet Model
+CD/COM/ITEM.T/46,Raw,Model,Earth Ring Model
+CD/COM/ITEM.T/47,Raw,Model,Psycpros Collar Model
+CD/COM/ITEM.T/48,Raw,Model,Amulet Of Mist Model
+CD/COM/ITEM.T/49,Raw,Model,Lightwave Ring Model
+CD/COM/ITEM.T/50,Raw,Model,Pirate's Map Model
+CD/COM/ITEM.T/51,Raw,Model,Miner's Map Model
+CD/COM/ITEM.T/52,Raw,Model,Necron's Map Model
+CD/COM/ITEM.T/53,Raw,Model,Gold Coin Model
+CD/COM/ITEM.T/54,Raw,Model,Blood Stone Model
+CD/COM/ITEM.T/55,Raw,Model,Moon Stone Model
+CD/COM/ITEM.T/56,Raw,Model,Verdite Model
+CD/COM/ITEM.T/57,Raw,Model,Earth Herb Model
+CD/COM/ITEM.T/58,Raw,Model,Antidote Model
+CD/COM/ITEM.T/59,Raw,Model,Dragon Crystal Model
+CD/COM/ITEM.T/60,Raw,Model,Blue Potion Model
+CD/COM/ITEM.T/61,Raw,Model,Red Potion Model
+CD/COM/ITEM.T/62,Raw,Model,Green Potion Model
+CD/COM/ITEM.T/63,Raw,Model,Gold Potion Model
+CD/COM/ITEM.T/64,Raw,Model,"A" Potion Model
+CD/COM/ITEM.T/65,Raw,Model,Crystal Flask Model
+CD/COM/ITEM.T/66,Raw,Model,Figure Of Seath Model
+CD/COM/ITEM.T/67,Raw,Model,Phantom Rod Model
+CD/COM/ITEM.T/68,Raw,Model,Truth Glass Model
+CD/COM/ITEM.T/69,Raw,Model,Seath's Plume Model
+CD/COM/ITEM.T/70,Raw,Model,Demon's Pick Model
+CD/COM/ITEM.T/71,Raw,Model,Harvine's Flute Model
+CD/COM/ITEM.T/72,Raw,Model,Ground Bell Model
+CD/COM/ITEM.T/73,Raw,Model,Fire Crystal Model
+CD/COM/ITEM.T/74,Raw,Model,Water Crystal Model
+CD/COM/ITEM.T/75,Raw,Model,Earth Crystal Model
+CD/COM/ITEM.T/76,Raw,Model,Wind Crystal Model
+CD/COM/ITEM.T/77,Raw,Model,Light Crystal Model
+CD/COM/ITEM.T/78,Raw,Model,Dark Crystal Model
+CD/COM/ITEM.T/79,Raw,Model,Crystal Model
+CD/COM/ITEM.T/80,Raw,Model,Crystal Shard Model
+CD/COM/ITEM.T/81,Raw,Model,"A" Ring Model
+CD/COM/ITEM.T/82,Raw,Model,Elf's Key Model
+CD/COM/ITEM.T/83,Raw,Model,Pirate's Key Model
+CD/COM/ITEM.T/84,Raw,Model,Skull Key Model
+CD/COM/ITEM.T/85,Raw,Model,Jail Key Model
+CD/COM/ITEM.T/86,Raw,Model,Rhombus Key Model
+CD/COM/ITEM.T/87,Raw,Model,Harvine's Key Model
+CD/COM/ITEM.T/88,Raw,Model,Dragon Stone Model
+CD/COM/ITEM.T/89,Raw,Model,Magician's Key Model
+CD/COM/ITEM.T/90,Raw,Model,Silver Key Model
+CD/COM/ITEM.T/91,Raw,Model,Gold Key Model
+CD/COM/ITEM.T/92,Raw,Model,Shrine Key Model
+CD/COM/ITEM.T/93,Raw,Model,"A" Herb Model
+CD/COM/ITEM.T/94,Raw,Model,Moon Gate Model
+CD/COM/ITEM.T/95,Raw,Model,Star Gate Model
+CD/COM/ITEM.T/96,Raw,Model,Sun Gate Model
+CD/COM/ITEM.T/97,Raw,Model,Moon Key Model
+CD/COM/ITEM.T/98,Raw,Model,Star Key Model
+CD/COM/ITEM.T/99,Raw,Model,Sun Key Model
+CD/COM/ITEM.T/100,Raw,Model,Arrow For The Bow Model
+CD/COM/ITEM.T/101,Raw,Model,Elf's Bolt Model
+CD/COM/ITEM.T/102,Raw,Model,"A" Herb 2 Model
+CD/COM/ITEM.T/103,Raw,TextureDB,Text: Al Hunt
+CD/COM/ITEM.T/104,Raw,TextureDB,Text: Nola Bagil
+CD/COM/ITEM.T/105,Raw,TextureDB,Text: Mark Wozz
+CD/COM/ITEM.T/106,Raw,TextureDB,Text: Rand Ferrer
+CD/COM/ITEM.T/107,Raw,TextureDB,Text: Radd Bilheim
+CD/COM/ITEM.T/108,Raw,TextureDB,Text: Kehl Hunt
+CD/COM/ITEM.T/109,Raw,TextureDB,Text: Krola Sandler Amgun
+CD/COM/ITEM.T/110,Raw,TextureDB,Text: Cliff Lore
+CD/COM/ITEM.T/111,Raw,TextureDB,Text: David Tabler
+CD/COM/ITEM.T/112,Raw,TextureDB,Text: Dalf Vice
+CD/COM/ITEM.T/113,Raw,TextureDB,Text: Harris Carvitto
+CD/COM/ITEM.T/114,Raw,TextureDB,Text: Teo Gigi Budwell
+CD/COM/ITEM.T/115,Raw,TextureDB,Text: Karen Leon Shore
+CD/COM/ITEM.T/116,Raw,TextureDB,Text: Base No1
+CD/COM/ITEM.T/117,Raw,TextureDB,Text: Base No2
+CD/COM/ITEM.T/118,Raw,TextureDB,Text: Base No3
+CD/COM/ITEM.T/119,Raw,TextureDB,Text: Base No4
+CD/COM/ITEM.T/120,Raw,TextureDB,Text: Base No5
+CD/COM/ITEM.T/121,Raw,TextureDB,Text: Base No6
+CD/COM/ITEM.T/122,Raw,TextureDB,Text: The Magic Cave Of Ice
+CD/COM/ITEM.T/123,Raw,TextureDB,Text: Base No7
+CD/COM/ITEM.T/124,Raw,TextureDB,Text: The Entrance To The North Village
+CD/COM/ITEM.T/125,Raw,TextureDB,Text: The Entrance To The South Village
+CD/COM/ITEM.T/126,Raw,TextureDB,Text: The Space For Completion No Trespassing
+CD/COM/ITEM.T/127,Raw,TextureDB,Text: The Entrance To The Central Village
+CD/COM/ITEM.T/128,Raw,TextureDB,Text: The Entrance To The Big Mine
+CD/COM/ITEM.T/129,Raw,TextureDB,Text: The Underworld Prison No1
+CD/COM/ITEM.T/130,Raw,TextureDB,Text: The Underworld Prison No2
+CD/COM/ITEM.T/131,Raw,TextureDB,Text: The Cemetery For The Military Guards Of King Harvine III
+CD/COM/ITEM.T/132,Raw,TextureDB,Text: Royal Treasure House
+CD/COM/ITEM.T/133,Raw,TextureDB,Text: The Magic Cave Of Fire
+CD/COM/ITEM.T/134,Raw,TextureDB,Text: Warriors Who Were Killed By Guyras Legion Are Buried Here
+CD/COM/ITEM.T/135,Raw,TextureDB,Text: The Souls Of The Guards Who Were Killed Are Waiting To Watch The Next Fight
+CD/COM/ITEM.T/136,Raw,TextureDB,Text: The King Of Winds King Harvine III Had Started To Construct His Castle Here
+CD/COM/ITEM.T/137,Raw,TextureDB,Text: The Castle Of The Great Ruler Of The Northern Continent King Harvine III
+CD/COM/ITEM.T/138,Raw,TextureDB,Text: Danger Ahead
+CD/COM/ITEM.T/139,Raw,TextureDB,Text: In The Name Of The Great Mage No One Can Enter This Cave Of Earth Soul
+CD/COM/ITEM.T/140,Raw,TextureDB,Text: Galth Free The Demon Of The Darkside Died With The High Elves He Is A Phantom Of The World
+CD/COM/ITEM.T/141,Raw,TextureDB,Text: A Message From The East Land Rest In Peace Here
+CD/COM/ITEM.T/142,Raw,TextureDB,Text: Most Soldiers Have Already Died There Is No Way To Leave The Island We Realize That There Is No Way Back Home
+CD/COM/ITEM.T/143,Raw,TextureDB,Text: In The Name Of Tsedeck The Mage Of Fire Who Defeated King Harvine III And Ruled The Northern Continent
+CD/COM/ITEM.T/144,Raw,TextureDB,Text: Gigis House Sandler
+CD/COM/ITEM.T/145,Raw,TextureDB,Text: They Can Be Attacked By Bows Take Good Aim
+CD/COM/ITEM.T/146,Raw,TextureDB,Text: Do Not Enter Old Hand
+CD/COM/ITEM.T/147,Raw,TextureDB,Text: Medical Herbs For Sale Al Hunt
+CD/COM/ITEM.T/148,Raw,TextureDB,Text: The South Graveyard To The Small Mine
+CD/COM/ITEM.T/149,Raw,TextureDB,Text: Termites Nest Ahead Watch Your Step
+CD/COM/ITEM.T/150,Raw,TextureDB,Text: My Beloved Son You Have Fought For Me And Have Lost Your Life For Me May You Rest In Peace
+CD/COM/ITEM.T/151,Raw,TextureDB,Text: Do Not Get Closer Krakens Nest
+CD/COM/ITEM.T/152,Raw,TextureDB,Text: Dangerous No Exit
+CD/COM/ITEM.T/153,Raw,TextureDB,Text: The Elf Cave
+CD/COM/ITEM.T/154,Raw,TextureDB,Text: By And By A Man Who Comes Here Beats The Black Dragon With The Blessing Of Seath
+CD/COM/ITEM.T/155,Raw,TextureDB,Text: The Cave Of The Darkside This Is Hell
+CD/COM/ITEM.T/156,Raw,TextureDB,Text: Offer Everything To Guyra Who Rules The Light And The Dark
+CD/COM/ITEM.T/157,Raw,TextureDB,Text: They Are Creating Devils Be Careful
+CD/COM/ITEM.T/158,Raw,TextureDB,Text: When The Warriors Stand Up The Great Door Will Be Opened Again
+CD/COM/ITEM.T/159,Raw,TextureDB,Text: The Entrance To The Small Mine
+CD/COM/ITEM.T/160,Raw,TextureDB,Text: The Poisoned Cave Dangerous
+CD/COM/ITEM.T/161,Raw,TextureDB,Text: The Great Demon's Grave
+CD/COM/ITEM.T/162,Raw,TextureDB,Text: Earnests Body
+CD/COM/ITEM.T/163,Raw,TextureDB,Text: The Picture Of Warriors
+CD/COM/ITEM.T/164,Raw,TextureDB,Text: Truth Glass Green Slime
+CD/COM/ITEM.T/165,Raw,TextureDB,Text: Truth Glass Poison Slime
+CD/COM/ITEM.T/166,Raw,TextureDB,Text: Truth Glass Sigill
+CD/COM/ITEM.T/167,Raw,TextureDB,Text: Truth Glass Sigill 2
+CD/COM/ITEM.T/168,Raw,TextureDB,Text: Truth Glass Baltail
+CD/COM/ITEM.T/169,Raw,TextureDB,Text: Truth Glass Baltail 2
+CD/COM/ITEM.T/170,Raw,TextureDB,Text: Truth Glass Poison Baltail
+CD/COM/ITEM.T/171,Raw,TextureDB,Text: Truth Glass Poison Baltail 2
+CD/COM/ITEM.T/172,Raw,TextureDB,Text: Truth Glass Fire Elemental
+CD/COM/ITEM.T/173,Raw,TextureDB,Text: Truth Glass Fire Elemental 2
+CD/COM/ITEM.T/174,Raw,TextureDB,Text: Truth Glass Ghosts
+CD/COM/ITEM.T/175,Raw,TextureDB,Text: Truth Glass Reiks
+CD/COM/ITEM.T/176,Raw,TextureDB,Text: Truth Glass Head Eater
+CD/COM/ITEM.T/177,Raw,TextureDB,Text: Truth Glass Mogle
+CD/COM/ITEM.T/178,Raw,TextureDB,Text: Truth Glass S-Knight
+CD/COM/ITEM.T/179,Raw,TextureDB,Text: Truth Glass Necron's Soldiers
+CD/COM/ITEM.T/180,Raw,TextureDB,Text: Truth Glass Archers
+CD/COM/ITEM.T/181,Raw,TextureDB,Text: Truth Glass Skeleton
+CD/COM/ITEM.T/182,Raw,TextureDB,Text: Truth Glass Termite
+CD/COM/ITEM.T/183,Raw,TextureDB,Text: Truth Glass Kald
+CD/COM/ITEM.T/184,Raw,TextureDB,Text: Truth Glass Psythe
+CD/COM/ITEM.T/185,Raw,TextureDB,Text: Truth Glass Queen Termite
+CD/COM/ITEM.T/186,Raw,TextureDB,Text: Truth Glass Freeze Ball
+CD/COM/ITEM.T/187,Raw,TextureDB,Text: Truth Glass Log Stalker
+CD/COM/ITEM.T/188,Raw,TextureDB,Text: Truth Glass Demon Lord
+CD/COM/ITEM.T/189,Raw,TextureDB,Text: Truth Glass Kraken
+CD/COM/ITEM.T/190,Raw,TextureDB,Text: Truth Glass Kraken 2
+CD/COM/ITEM.T/191,Raw,TextureDB,Text: Truth Glass Earth Elemental
+CD/COM/ITEM.T/192,Raw,TextureDB,Text: Truth Glass Refma
+CD/COM/ITEM.T/193,Raw,TextureDB,Text: Truth Glass Tarn
+CD/COM/ITEM.T/194,Raw,TextureDB,Text: Truth Glass Copper Knight
+CD/COM/ITEM.T/195,Raw,TextureDB,Text: Truth Glass Dias Bagil
+CD/COM/ITEM.T/196,Raw,TextureDB,Text: Truth Glass Guyra
+CD/COM/ITEM.T/197,Raw,TextureDB,Text: Truth Glass Salamander
+CD/COM/ITEM.T/198,Raw,TextureDB,Text: Truth Glass Flame Spirit
+CD/COM/ITEM.T/199,Raw,TextureDB,Text: Truth Glass Billent
+CD/COM/ITEM.T/200,Raw,TextureDB,Text: Truth Glass Skeleton Of One Eyed Giant
+CD/COM/ITEM.T/201,Raw,TextureDB,Text: Truth Glass The Picture Of A King
+CD/COM/ITEM.T/202,Raw,TextureDB,Text: Truth Glass Mecha Demon Lord
+CD/COM/ITEM.T/203,Raw,TextureDB,Text: Truth Glass Mecha Termite
+CD/COM/ITEM.T/204,Raw,TextureDB,Text: Truth Glass Mecha Reiks
+CD/COM/ITEM.T/205,Raw,TextureDB,Text: Truth Glass Mages Candlesticks
+CD/COM/ITEM.T/206,Raw,TextureDB,Text: Truth Glass Bitt
+CD/COM/ITEM.T/207,Raw,TextureDB,Text: Truth Glass Refma 2
+CD/COM/ITEM.T/208,Raw,TextureDB,Text: Truth Glass Celffy Foss
+CD/COM/ITEM.T/209,Raw,TextureDB,Text: Truth Glass Celffy Foss 2
+CD/COM/ITEM.T/210,Raw,TextureDB,Text: Truth Glass Raffy Foss
+CD/COM/ITEM.T/211,Raw,TextureDB,Text: Truth Glass Jose Harven
+CD/COM/ITEM.T/212,Raw,TextureDB,Text: Truth Glass Nola Bagil
+CD/COM/ITEM.T/213,Raw,TextureDB,Text: Truth Glass Meryl
+CD/COM/ITEM.T/214,Raw,TextureDB,Text: Truth Glass Gigi Budwell
+CD/COM/ITEM.T/215,Raw,TextureDB,Text: Truth Glass Gigi Budwell 2
+CD/COM/ITEM.T/216,Raw,TextureDB,Text: Truth Glass Teo Budwell
+CD/COM/ITEM.T/217,Raw,TextureDB,Text: Truth Glass Teo Budwell 2
+CD/COM/ITEM.T/218,Raw,TextureDB,Text: Truth Glass Teo Budwell 3
+CD/COM/ITEM.T/219,Raw,TextureDB,Text: Truth Glass Karen Shore
+CD/COM/ITEM.T/220,Raw,TextureDB,Text: Truth Glass Leon Shore
+CD/COM/ITEM.T/221,Raw,TextureDB,Text: Truth Glass Leon Shore 2
+CD/COM/ITEM.T/222,Raw,TextureDB,Text: Truth Glass Al Hunt
+CD/COM/ITEM.T/223,Raw,TextureDB,Text: Truth Glass Harris Carvitto
+CD/COM/ITEM.T/224,Raw,TextureDB,Text: Truth Glass Fai Fadlin
+CD/COM/ITEM.T/225,Raw,TextureDB,Text: Truth Glass Cliff Lore
+CD/COM/ITEM.T/226,Raw,TextureDB,Text: Truth Glass Rand Ferrer
+CD/COM/ITEM.T/227,Raw,TextureDB,Text: Truth Glass David Tabler
+CD/COM/ITEM.T/228,Raw,TextureDB,Text: Truth Glass Dalf Vice
+CD/COM/ITEM.T/229,Raw,TextureDB,Text: Truth Glass Radd Bilheim
+CD/COM/ITEM.T/230,Raw,TextureDB,Text: Truth Glass Krola Amgun
+CD/COM/ITEM.T/231,Raw,TextureDB,Text: Truth Glass Krola Amgun 2
+CD/COM/ITEM.T/232,Raw,TextureDB,Text: Truth Glass Sandler Amgun
+CD/COM/ITEM.T/233,Raw,TextureDB,Text: Truth Glass Sandler Amgun 2
+CD/COM/ITEM.T/234,Raw,TextureDB,Text: Truth Glass Mark Wozz
+CD/COM/ITEM.T/235,Raw,TextureDB,Text: Truth Glass Earnest Clyde
+CD/COM/ITEM.T/236,Raw,TextureDB,Text: Truth Glass Kehl Hunt
+CD/COM/ITEM.T/237,Raw,TextureDB,Text: Truth Glass Kehl Hunt 2
+CD/COM/ITEM.T/238,Raw,TextureDB,Text: Truth Glass Karen Shore 2
+CD/COM/ITEM.T/239,Raw,TextureDB,Text: Truth Glass The Grave Of A Saint
+CD/COM/ITEM.T/240,Raw,TextureDB,Text: Truth Glass Earnest Clyde 2
+CD/COM/ITEM.T/241,Raw,TextureDB,Text: Truth Glass Dragon Grass
+CD/COM/ITEM.T/242,Raw,TextureDB,Text: Truth Glass Miria
+CD/COM/ITEM.T/243,Raw,TextureDB,Text: Meryl Dagger
+CD/COM/ITEM.T/244,Raw,TextureDB,Text: Meryl Short Sword
+CD/COM/ITEM.T/245,Raw,TextureDB,Text: Meryl Knight Sword
+CD/COM/ITEM.T/246,Raw,TextureDB,Text: Meryl Morning Star
+CD/COM/ITEM.T/247,Raw,TextureDB,Text: Meryl Battle Hammer
+CD/COM/ITEM.T/248,Raw,TextureDB,Text: Meryl Bastard Sword
+CD/COM/ITEM.T/249,Raw,TextureDB,Text: Meryl Crescent Axe
+CD/COM/ITEM.T/250,Raw,TextureDB,Text: Meryl Flame Sword
+CD/COM/ITEM.T/251,Raw,TextureDB,Text: Meryl Shiden
+CD/COM/ITEM.T/252,Raw,TextureDB,Text: Meryl Spider
+CD/COM/ITEM.T/253,Raw,TextureDB,Text: Meryl Ice Blade
+CD/COM/ITEM.T/254,Raw,TextureDB,Text: Meryl Seath's Sword
+CD/COM/ITEM.T/255,Raw,TextureDB,Text: Meryl Moonlight Sword
+CD/COM/ITEM.T/256,Raw,TextureDB,Text: Meryl Dark Slayer
+CD/COM/ITEM.T/257,Raw,TextureDB,Text: Meryl Bow
+CD/COM/ITEM.T/258,Raw,TextureDB,Text: Meryl Arbalest
+CD/COM/ITEM.T/259,Raw,TextureDB,Text: Meryl Iron Mask
+CD/COM/ITEM.T/260,Raw,TextureDB,Text: Meryl Knight Helm
+CD/COM/ITEM.T/261,Raw,TextureDB,Text: Meryl Great Helm
+CD/COM/ITEM.T/262,Raw,TextureDB,Text: Meryl Blood Crown
+CD/COM/ITEM.T/263,Raw,TextureDB,Text: Meryl Lightning Helm
+CD/COM/ITEM.T/264,Raw,TextureDB,Text: Meryl Seath's Helm
+CD/COM/ITEM.T/265,Raw,TextureDB,Text: Meryl Breast Plate
+CD/COM/ITEM.T/266,Raw,TextureDB,Text: Meryl Knight Plate
+CD/COM/ITEM.T/267,Raw,TextureDB,Text: Meryl Ice Armor
+CD/COM/ITEM.T/268,Raw,TextureDB,Text: Meryl Dark Armor
+CD/COM/ITEM.T/269,Raw,TextureDB,Text: Meryl Seath's Armor
+CD/COM/ITEM.T/270,Raw,TextureDB,Text: Meryl Leather Shield
+CD/COM/ITEM.T/271,Raw,TextureDB,Text: Meryl Large Shield
+CD/COM/ITEM.T/272,Raw,TextureDB,Text: Meryl Moon Guard
+CD/COM/ITEM.T/273,Raw,TextureDB,Text: Meryl Crystal Guard
+CD/COM/ITEM.T/274,Raw,TextureDB,Text: Meryl Skull Shield
+CD/COM/ITEM.T/275,Raw,TextureDB,Text: Meryl Seaths Shield
+CD/COM/ITEM.T/276,Raw,TextureDB,Text: Meryl Iron Gloves
+CD/COM/ITEM.T/277,Raw,TextureDB,Text: Meryl Stone Hands
+CD/COM/ITEM.T/278,Raw,TextureDB,Text: Meryl Silver Arms
+CD/COM/ITEM.T/279,Raw,TextureDB,Text: Meryl Demon's Hands
+CD/COM/ITEM.T/280,Raw,TextureDB,Text: Meryl Ruinous Gloves
+CD/COM/ITEM.T/281,Raw,TextureDB,Text: Meryl Iron Boots
+CD/COM/ITEM.T/282,Raw,TextureDB,Text: Meryl Leg Guarders
+CD/COM/ITEM.T/283,Raw,TextureDB,Text: Meryl Silver Boots
+CD/COM/ITEM.T/284,Raw,TextureDB,Text: Meryl Death Walkers
+CD/COM/ITEM.T/285,Raw,TextureDB,Text: Meryl Ruinous Boots
+CD/COM/ITEM.T/286,Raw,TextureDB,Text: Meryl Scorpion's Bracelet
+CD/COM/ITEM.T/287,Raw,TextureDB,Text: Meryl Seath's Tear
+CD/COM/ITEM.T/288,Raw,TextureDB,Text: Meryl Seath's Bracelet
+CD/COM/ITEM.T/289,Raw,TextureDB,Text: Meryl Earth Ring
+CD/COM/ITEM.T/290,Raw,TextureDB,Text: Meryl Psycpros Collar
+CD/COM/ITEM.T/291,Raw,TextureDB,Text: Meryl Amulet Of Mist
+CD/COM/ITEM.T/292,Raw,TextureDB,Text: Meryl Lightwave Ring
+CD/COM/ITEM.T/293,Raw,TextureDB,Text: Meryl Pirate's Map
+CD/COM/ITEM.T/294,Raw,TextureDB,Text: Meryl Miner's Map
+CD/COM/ITEM.T/295,Raw,TextureDB,Text: Meryl Necron's Map
+CD/COM/ITEM.T/296,Raw,TextureDB,Text: Meryl Blood Stone
+CD/COM/ITEM.T/297,Raw,TextureDB,Text: Meryl Moon Stone
+CD/COM/ITEM.T/298,Raw,TextureDB,Text: Meryl Verdite
+CD/COM/ITEM.T/299,Raw,TextureDB,Text: Meryl Earth Herb
+CD/COM/ITEM.T/300,Raw,TextureDB,Text: Meryl Antidote
+CD/COM/ITEM.T/301,Raw,TextureDB,Text: Meryl Dragon Crystal
+CD/COM/ITEM.T/302,Raw,TextureDB,Text: Meryl Blue Potion
+CD/COM/ITEM.T/303,Raw,TextureDB,Text: Meryl Red Potion
+CD/COM/ITEM.T/304,Raw,TextureDB,Text: Meryl Green Potion
+CD/COM/ITEM.T/305,Raw,TextureDB,Text: Meryl Gold Potion
+CD/COM/ITEM.T/306,Raw,TextureDB,Text: Meryl Crystal Flask
+CD/COM/ITEM.T/307,Raw,TextureDB,Text: Meryl Figure Of Seath
+CD/COM/ITEM.T/308,Raw,TextureDB,Text: Meryl Phantom Rod
+CD/COM/ITEM.T/309,Raw,TextureDB,Text: Meryl Truth Glass
+CD/COM/ITEM.T/310,Raw,TextureDB,Text: Meryl Seath's Plume
+CD/COM/ITEM.T/311,Raw,TextureDB,Text: Meryl Demon's Pick
+CD/COM/ITEM.T/312,Raw,TextureDB,Text: Meryl Harvine's Flute
+CD/COM/ITEM.T/313,Raw,TextureDB,Text: Meryl Ground Bell
+CD/COM/ITEM.T/314,Raw,TextureDB,Text: Meryl Fire Crystal
+CD/COM/ITEM.T/315,Raw,TextureDB,Text: Meryl Water Crystal
+CD/COM/ITEM.T/316,Raw,TextureDB,Text: Meryl Earth Crystal
+CD/COM/ITEM.T/317,Raw,TextureDB,Text: Meryl Wind Crystal
+CD/COM/ITEM.T/318,Raw,TextureDB,Text: Meryl Light Crystal
+CD/COM/ITEM.T/319,Raw,TextureDB,Text: Meryl Dark Crystal
+CD/COM/ITEM.T/320,Raw,TextureDB,Text: Meryl Crystal
+CD/COM/ITEM.T/321,Raw,TextureDB,Text: Meryl Crystal Shard
+CD/COM/ITEM.T/322,Raw,TextureDB,Text: Meryl Elf's Key
+CD/COM/ITEM.T/323,Raw,TextureDB,Text: Meryl Pirates Key
+CD/COM/ITEM.T/324,Raw,TextureDB,Text: Meryl Skull Key
+CD/COM/ITEM.T/325,Raw,TextureDB,Text: Meryl Jail Key
+CD/COM/ITEM.T/326,Raw,TextureDB,Text: Meryl Rhombus Key
+CD/COM/ITEM.T/327,Raw,TextureDB,Text: Meryl Harvine's Key
+CD/COM/ITEM.T/328,Raw,TextureDB,Text: Meryl Dragon Stone
+CD/COM/ITEM.T/329,Raw,TextureDB,Text: Meryl Magician's Key
+CD/COM/ITEM.T/330,Raw,TextureDB,Text: Meryl Silver Key
+CD/COM/ITEM.T/331,Raw,TextureDB,Text: Meryl Gold Key
+CD/COM/ITEM.T/332,Raw,TextureDB,Text: Meryl Shrine Key
+CD/COM/ITEM.T/333,Raw,TextureDB,Text: Meryl Moon Gate
+CD/COM/ITEM.T/334,Raw,TextureDB,Text: Meryl Star Gate
+CD/COM/ITEM.T/335,Raw,TextureDB,Text: Meryl Sun Gate
+CD/COM/ITEM.T/336,Raw,TextureDB,Text: Meryl Moon Key
+CD/COM/ITEM.T/337,Raw,TextureDB,Text: Meryl Star Key
+CD/COM/ITEM.T/338,Raw,TextureDB,Text: Meryl Sun Key
+CD/COM/ITEM.T/339,Raw,TextureDB,Text: Meryl Arrow For The Bow
+CD/COM/ITEM.T/340,Raw,TextureDB,Text: Meryl Elf's Bolt
+CD/COM/ITEM.T/341,Raw,TextureDB,
+CD/COM/ITEM.T/342,Raw,TextureDB,
+CD/COM/ITEM.T/343,Raw,TextureDB,
+CD/COM/ITEM.T/344,Raw,TextureDB,
+CD/COM/ITEM.T/345,Raw,TextureDB,
+CD/COM/ITEM.T/346,Raw,TextureDB,
+CD/COM/ITEM.T/347,Raw,TextureDB,
+CD/COM/ITEM.T/348,Raw,TextureDB,
+CD/COM/ITEM.T/349,Raw,TextureDB,
+CD/COM/ITEM.T/350,Raw,TextureDB,
+CD/COM/ITEM.T/351,Raw,TextureDB,
+CD/COM/ITEM.T/352,Raw,TextureDB,
+CD/COM/ITEM.T/353,Raw,TextureDB,
+CD/COM/ITEM.T/354,Raw,TextureDB,
+CD/COM/ITEM.T/355,Raw,TextureDB,
+CD/COM/ITEM.T/356,Raw,TextureDB,
+CD/COM/ITEM.T/357,Raw,TextureDB,
+CD/COM/ITEM.T/358,Raw,TextureDB,
+CD/COM/ITEM.T/359,Raw,TextureDB,
+CD/COM/ITEM.T/360,Raw,TextureDB,
+CD/COM/ITEM.T/361,Raw,TextureDB,
+CD/COM/ITEM.T/362,Raw,TextureDB,
+CD/COM/ITEM.T/363,Raw,TextureDB,
+CD/COM/ITEM.T/364,Raw,TextureDB,
+CD/COM/ITEM.T/365,Raw,TextureDB,Text: Truth Glass West Seaside
+CD/COM/ITEM.T/366,Raw,TextureDB,Text: Truth Glass The Pirate's Cave
+CD/COM/ITEM.T/367,Raw,TextureDB,Text: Truth Glass Cave Of Old Hand
+CD/COM/ITEM.T/368,Raw,TextureDB,Text: Truth Glass The Mage's Lighthouse
+CD/COM/ITEM.T/369,Raw,TextureDB,Text: Truth Glass The North Village
+CD/COM/ITEM.T/370,Raw,TextureDB,Text: Truth Glass The South Village
+CD/COM/ITEM.T/371,Raw,TextureDB,Text: Truth Glass A Small Mine
+CD/COM/ITEM.T/372,Raw,TextureDB,Text: Truth Glass The North Graveyard
+CD/COM/ITEM.T/373,Raw,TextureDB,Text: Truth Glass Base No 1
+CD/COM/ITEM.T/374,Raw,TextureDB,Text: Truth Glass Base No 2
+CD/COM/ITEM.T/375,Raw,TextureDB,Text: Truth Glass Base No 3
+CD/COM/ITEM.T/376,Raw,TextureDB,Text: Truth Glass Base No 4
+CD/COM/ITEM.T/377,Raw,TextureDB,Text: Truth Glass Base No 5
+CD/COM/ITEM.T/378,Raw,TextureDB,Text: Truth Glass Base No 6
+CD/COM/ITEM.T/379,Raw,TextureDB,Text: Truth Glass The Ruins Of King Harvine's Castle
+CD/COM/ITEM.T/380,Raw,TextureDB,Text: Truth Glass The Termite's Nest
+CD/COM/ITEM.T/381,Raw,TextureDB,Text: Truth Glass The Cemetery
+CD/COM/ITEM.T/382,Raw,TextureDB,Text: Truth Glass The Soldier's Cemetery
+CD/COM/ITEM.T/383,Raw,TextureDB,Text: Truth Glass The Window Of Homesickness
+CD/COM/ITEM.T/384,Raw,TextureDB,Text: Truth Glass The Elf Graveyard
+CD/COM/ITEM.T/385,Raw,TextureDB,Text: Truth Glass The East Village
+CD/COM/ITEM.T/386,Raw,TextureDB,Text: Truth Glass The Elf Shrine
+CD/COM/ITEM.T/387,Raw,TextureDB,Text: Truth Glass Seath's Fountain
+CD/COM/ITEM.T/388,Raw,TextureDB,Text: Truth Glass The Magic Palace Of Fire
+CD/COM/ITEM.T/389,Raw,TextureDB,Text: Truth Glass The Magic Palace Of Ice
+CD/COM/ITEM.T/390,Raw,TextureDB,Text: Truth Glass The Demon's Grave
+CD/COM/ITEM.T/391,Raw,TextureDB,Text: Truth Glass The South Graveyard
+CD/COM/ITEM.T/392,Raw,TextureDB,Text: Truth Glass The Big Mine
+CD/COM/ITEM.T/393,Raw,TextureDB,Text: Truth Glass The Poisoned Cave
+CD/COM/ITEM.T/394,Raw,TextureDB,Text: Truth Glass The Cave Of The Darkside
+CD/COM/ITEM.T/395,Raw,TextureDB,Text: Truth Glass The Elf Cave
+CD/COM/ITEM.T/396,Raw,TextureDB,Text: Truth Glass The Cave Of The Earth Soul
+CD/COM/ITEM.T/397,Raw,TextureDB,Text: Truth Glass The Lookout
+CD/COM/ITEM.T/398,Raw,TextureDB,Text: Truth Glass Necron's Coliseum
+CD/COM/ITEM.T/399,Raw,TextureDB,Text: Truth Glass The Warriors Graveyard
+CD/COM/ITEM.T/400,Raw,TextureDB,Text: Truth Glass The Research Office
+CD/COM/ITEM.T/401,Raw,TextureDB,Text: Truth Glass The Village Of The Wind
+CD/COM/ITEM.T/402,Raw,TextureDB,Text: Truth Glass The East Seaside
+CD/COM/MO.T,T,Container,
+CD/COM/MO.T/0,Raw,Model,Slime
+CD/COM/MO.T/1,Raw,Model,Poison Slime
+CD/COM/MO.T/2,Raw,Model,Sigill
+CD/COM/MO.T/3,Raw,Model,Baltail (Body)
+CD/COM/MO.T/4,Raw,Model,Baltail (Tail)
+CD/COM/MO.T/5,Raw,Model,Sting Fly (Body)
+CD/COM/MO.T/6,Raw,Model,Sting Fly (Tail)
+CD/COM/MO.T/7,Raw,Model,Fire Elemental
+CD/COM/MO.T/8,Raw,Model,Ghost
+CD/COM/MO.T/9,Raw,Model,Reik
+CD/COM/MO.T/10,Raw,Model,Slime
+CD/COM/MO.T/11,Raw,Model,Slime
+CD/COM/MO.T/12,Raw,Model,Head Eater
+CD/COM/MO.T/13,Raw,Model,Mogle
+CD/COM/MO.T/14,Raw,Model,S-Knight
+CD/COM/MO.T/15,Raw,Model,Necron's Soldier
+CD/COM/MO.T/16,Raw,Model,Archer
+CD/COM/MO.T/17,Raw,Model,Slime
+CD/COM/MO.T/18,Raw,Model,Skeleton
+CD/COM/MO.T/19,Raw,Model,Termite
+CD/COM/MO.T/20,Raw,Model,Kald
+CD/COM/MO.T/21,Raw,Model,Psythe
+CD/COM/MO.T/22,Raw,Model,Termite Queen
+CD/COM/MO.T/23,Raw,Model,Spike Ball (trap)
+CD/COM/MO.T/24,Raw,Model,Log Stalker
+CD/COM/MO.T/25,Raw,Model,Demon Lord
+CD/COM/MO.T/26,Raw,Model,Kraken (Body)
+CD/COM/MO.T/27,Raw,Model,Kraken (Shell)
+CD/COM/MO.T/28,Raw,Model,Earth Elemental
+CD/COM/MO.T/29,Raw,Model,Refma
+CD/COM/MO.T/30,Raw,Model,Tarn
+CD/COM/MO.T/31,Raw,Model,Copper Knight
+CD/COM/MO.T/32,Raw,Model,Necron
+CD/COM/MO.T/33,Raw,Model,Slime
+CD/COM/MO.T/34,Raw,Model,Slime
+CD/COM/MO.T/35,Raw,Model,Slime
+CD/COM/MO.T/36,Raw,Model,Guyra
+CD/COM/MO.T/37,Raw,Model,Salamander
+CD/COM/MO.T/38,Raw,Model,Flame Spirit
+CD/COM/MO.T/39,Raw,Model,Billent
+CD/COM/MO.T/40,Raw,Model,Slime
+CD/COM/MO.T/41,Raw,Model,Skeleton of One Eyed Giant
+CD/COM/MO.T/42,Raw,Model,Picture of a King
+CD/COM/MO.T/43,Raw,Model,Mecha Demon Lord
+CD/COM/MO.T/44,Raw,Model,Mecha Termite
+CD/COM/MO.T/45,Raw,Model,Mecha Reik
+CD/COM/MO.T/46,Raw,Model,Magician's Lamp
+CD/COM/MO.T/47,Raw,Model,Bitt
+CD/COM/MO.T/48,Raw,Model,Refma
+CD/COM/MO.T/49,Raw,Model,Cellfy Foss
+CD/COM/MO.T/50,Raw,Model,Cellfy Foss
+CD/COM/MO.T/51,Raw,Model,Raffy Foss
+CD/COM/MO.T/52,Raw,Model,Jose Harven
+CD/COM/MO.T/53,Raw,Model,Nola Bagil
+CD/COM/MO.T/54,Raw,Model,Meryl
+CD/COM/MO.T/55,Raw,Model,Gigi Budwell
+CD/COM/MO.T/56,Raw,Model,Gigi Budwell (Watering)
+CD/COM/MO.T/57,Raw,Model,Teo Budwell
+CD/COM/MO.T/58,Raw,Model,Teo Budwell (With Gigi)
+CD/COM/MO.T/59,Raw,Model,Teo Budwell (Mowing)
+CD/COM/MO.T/60,Raw,Model,Karen Shore
+CD/COM/MO.T/61,Raw,Model,Leon Shore
+CD/COM/MO.T/62,Raw,Model,Leon Shore (Watering)
+CD/COM/MO.T/63,Raw,Model,Al Hunt
+CD/COM/MO.T/64,Raw,Model,Harris Carvitto
+CD/COM/MO.T/65,Raw,Model,Fai Fadlin
+CD/COM/MO.T/66,Raw,Model,Cliff Lore
+CD/COM/MO.T/67,Raw,Model,Rand Ferrer
+CD/COM/MO.T/68,Raw,Model,David Tabler
+CD/COM/MO.T/69,Raw,Model,Dalf Vice
+CD/COM/MO.T/70,Raw,Model,Radd Bilheim
+CD/COM/MO.T/71,Raw,Model,Krola Amgun
+CD/COM/MO.T/72,Raw,Model,Krola Amgun (Cooking)
+CD/COM/MO.T/73,Raw,Model,Sandler Amgun
+CD/COM/MO.T/74,Raw,Model,Sandler Amgun
+CD/COM/MO.T/75,Raw,Model,Mark Wozz
+CD/COM/MO.T/76,Raw,Model,Earnest Clyde
+CD/COM/MO.T/77,Raw,Model,Kehl Hunt
+CD/COM/MO.T/78,Raw,Model,Kehl Hunt
+CD/COM/MO.T/79,Raw,Model,Karen Shore (Chair)
+CD/COM/MO.T/80,Raw,Model,Jose Haven (Death)
+CD/COM/MO.T/81,Raw,Model,Saint Grave
+CD/COM/MO.T/82,Raw,Model,Earnest Clyde (Sitting)
+CD/COM/MO.T/83,Raw,Model,Dragon Grass
+CD/COM/MO.T/84,Raw,Model,Jose Haven (Death)
+CD/COM/MO.T/85,Raw,Model,Miria
+CD/COM/MO.T/86,Raw,Model,Dagger
+CD/COM/MO.T/87,Raw,Model,Short Sword
+CD/COM/MO.T/88,Raw,Model,Knight Sword
+CD/COM/MO.T/89,Raw,Model,Morning Star
+CD/COM/MO.T/90,Raw,Model,Battle Hammer
+CD/COM/MO.T/91,Raw,Model,Bastard Sword
+CD/COM/MO.T/92,Raw,Model,Crescent Axe
+CD/COM/MO.T/93,Raw,Model,Default Model
+CD/COM/MO.T/94,Raw,Model,Seath's Sword (And Wall)
+CD/COM/MO.T/95,Raw,Model,Flame Sword
+CD/COM/MO.T/96,Raw,Model,Shiden
+CD/COM/MO.T/97,Raw,Model,Spider
+CD/COM/MO.T/98,Raw,Model,Ice Blade
+CD/COM/MO.T/99,Raw,Model,Seath's Sword
+CD/COM/MO.T/100,Raw,Model,Moonlight Sword
+CD/COM/MO.T/101,Raw,Model,Dark Slayer
+CD/COM/MO.T/102,Raw,Model,Bow
+CD/COM/MO.T/103,Raw,Model,Arbalest
+CD/COM/MO.T/104,Raw,Model,Seath's Sword (Broken)
+CD/COM/MO.T/105,Raw,Model,Default Model
+CD/COM/MO.T/106,Raw,Model,Default Model
+CD/COM/MO.T/107,Raw,Model,Iron Mask
+CD/COM/MO.T/108,Raw,Model,Knight Helm
+CD/COM/MO.T/109,Raw,Model,Great Helm
+CD/COM/MO.T/110,Raw,Model,Blood Crown
+CD/COM/MO.T/111,Raw,Model,Lightning Helm
+CD/COM/MO.T/112,Raw,Model,Seath's Helm
+CD/COM/MO.T/113,Raw,Model,Default Model
+CD/COM/MO.T/114,Raw,Model,
+CD/COM/MO.T/115,Raw,Model,
+CD/COM/MO.T/116,Raw,Model,
+CD/COM/MO.T/117,Raw,Model,
+CD/COM/MO.T/118,Raw,Model,
+CD/COM/MO.T/119,Raw,Model,
+CD/COM/MO.T/120,Raw,Model,
+CD/COM/MO.T/121,Raw,Model,
+CD/COM/MO.T/122,Raw,Model,
+CD/COM/MO.T/123,Raw,Model,
+CD/COM/MO.T/124,Raw,Model,
+CD/COM/MO.T/125,Raw,Model,
+CD/COM/MO.T/126,Raw,Model,
+CD/COM/MO.T/127,Raw,Model,
+CD/COM/MO.T/128,Raw,Model,
+CD/COM/MO.T/129,Raw,Model,
+CD/COM/MO.T/130,Raw,Model,
+CD/COM/MO.T/131,Raw,Model,
+CD/COM/MO.T/132,Raw,Model,
+CD/COM/MO.T/133,Raw,Model,
+CD/COM/MO.T/134,Raw,Model,
+CD/COM/MO.T/135,Raw,Model,
+CD/COM/MO.T/136,Raw,Model,
+CD/COM/MO.T/137,Raw,Model,
+CD/COM/MO.T/138,Raw,Model,
+CD/COM/MO.T/139,Raw,Model,
+CD/COM/MO.T/140,Raw,Model,
+CD/COM/MO.T/141,Raw,Model,
+CD/COM/MO.T/142,Raw,Model,
+CD/COM/MO.T/143,Raw,Model,
+CD/COM/MO.T/144,Raw,Model,
+CD/COM/MO.T/145,Raw,Model,
+CD/COM/MO.T/146,Raw,Model,
+CD/COM/MO.T/147,Raw,Model,
+CD/COM/MO.T/148,Raw,Model,
+CD/COM/MO.T/149,Raw,Model,
+CD/COM/MO.T/150,Raw,Model,
+CD/COM/MO.T/151,Raw,Model,
+CD/COM/MO.T/152,Raw,Model,
+CD/COM/MO.T/153,Raw,Model,
+CD/COM/MO.T/154,Raw,Model,
+CD/COM/MO.T/155,Raw,Model,
+CD/COM/MO.T/156,Raw,Model,
+CD/COM/MO.T/157,Raw,Model,
+CD/COM/MO.T/158,Raw,Model,
+CD/COM/MO.T/159,Raw,Model,
+CD/COM/MO.T/160,Raw,Model,
+CD/COM/MO.T/161,Raw,Model,
+CD/COM/MO.T/162,Raw,Model,
+CD/COM/MO.T/163,Raw,Model,
+CD/COM/MO.T/164,Raw,Model,
+CD/COM/MO.T/165,Raw,Model,
+CD/COM/MO.T/166,Raw,Model,
+CD/COM/MO.T/167,Raw,Model,
+CD/COM/MO.T/168,Raw,Model,
+CD/COM/MO.T/169,Raw,Model,
+CD/COM/MO.T/170,Raw,Model,
+CD/COM/MO.T/171,Raw,Model,
+CD/COM/MO.T/172,Raw,Model,
+CD/COM/MO.T/173,Raw,Model,
+CD/COM/MO.T/174,Raw,Model,
+CD/COM/MO.T/175,Raw,Model,
+CD/COM/MO.T/176,Raw,Model,
+CD/COM/MO.T/177,Raw,Model,
+CD/COM/MO.T/178,Raw,Model,
+CD/COM/MO.T/179,Raw,Model,
+CD/COM/MO.T/180,Raw,Model,
+CD/COM/MO.T/181,Raw,Model,
+CD/COM/MO.T/182,Raw,Model,
+CD/COM/MO.T/183,Raw,Model,
+CD/COM/MO.T/184,Raw,Model,
+CD/COM/MO.T/185,Raw,Model,
+CD/COM/MO.T/186,Raw,Model,
+CD/COM/MO.T/187,Raw,Model,
+CD/COM/MO.T/188,Raw,Model,
+CD/COM/MO.T/189,Raw,Model,
+CD/COM/MO.T/190,Raw,Model,
+CD/COM/MO.T/191,Raw,Model,
+CD/COM/MO.T/192,Raw,Model,
+CD/COM/MO.T/193,Raw,Model,
+CD/COM/MO.T/194,Raw,Model,
+CD/COM/MO.T/195,Raw,Model,
+CD/COM/MO.T/196,Raw,Model,
+CD/COM/MO.T/197,Raw,Model,
+CD/COM/MO.T/198,Raw,Model,
+CD/COM/MO.T/199,Raw,Model,
+CD/COM/MO.T/200,Raw,Model,
+CD/COM/MO.T/201,Raw,Model,
+CD/COM/MO.T/202,Raw,Model,
+CD/COM/MO.T/203,Raw,Model,
+CD/COM/MO.T/204,Raw,Model,
+CD/COM/MO.T/205,Raw,Model,
+CD/COM/MO.T/206,Raw,Model,
+CD/COM/MO.T/207,Raw,Model,
+CD/COM/MO.T/208,Raw,Model,
+CD/COM/MO.T/209,Raw,Model,
+CD/COM/MO.T/210,Raw,Model,
+CD/COM/MO.T/211,Raw,Model,
+CD/COM/MO.T/212,Raw,Model,
+CD/COM/MO.T/213,Raw,Model,
+CD/COM/MO.T/214,Raw,Model,
+CD/COM/MO.T/215,Raw,Model,
+CD/COM/MO.T/216,Raw,Model,
+CD/COM/MO.T/217,Raw,Model,
+CD/COM/MO.T/218,Raw,Model,
+CD/COM/MO.T/219,Raw,Model,
+CD/COM/MO.T/220,Raw,Model,
+CD/COM/MO.T/221,Raw,Model,
+CD/COM/MO.T/222,Raw,Model,
+CD/COM/MO.T/223,Raw,Model,
+CD/COM/MO.T/224,Raw,Model,
+CD/COM/MO.T/225,Raw,Model,
+CD/COM/MO.T/226,Raw,Model,
+CD/COM/MO.T/227,Raw,Model,
+CD/COM/MO.T/228,Raw,Model,
+CD/COM/MO.T/229,Raw,Model,
+CD/COM/MO.T/230,Raw,Model,
+CD/COM/MO.T/231,Raw,Model,
+CD/COM/MO.T/232,Raw,Model,
+CD/COM/MO.T/233,Raw,Model,
+CD/COM/MO.T/234,Raw,Model,
+CD/COM/MO.T/235,Raw,Model,
+CD/COM/MO.T/236,Raw,Model,
+CD/COM/MO.T/237,Raw,Model,
+CD/COM/MO.T/238,Raw,Model,
+CD/COM/MO.T/239,Raw,Model,
+CD/COM/MO.T/240,Raw,Model,
+CD/COM/MO.T/241,Raw,Model,
+CD/COM/MO.T/242,Raw,Model,
+CD/COM/MO.T/243,Raw,Model,
+CD/COM/MO.T/244,Raw,Model,
+CD/COM/MO.T/245,Raw,Model,
+CD/COM/MO.T/246,Raw,Model,
+CD/COM/MO.T/247,Raw,Model,
+CD/COM/MO.T/248,Raw,Model,
+CD/COM/MO.T/249,Raw,Model,
+CD/COM/MO.T/250,Raw,Model,
+CD/COM/MO.T/251,Raw,Model,
+CD/COM/MO.T/252,Raw,Model,
+CD/COM/MO.T/253,Raw,Model,
+CD/COM/MO.T/254,Raw,Model,
+CD/COM/MO.T/255,Raw,Model,
+CD/COM/MO.T/256,Raw,Model,
+CD/COM/MO.T/257,Raw,Model,
+CD/COM/MO.T/258,Raw,Model,
+CD/COM/MO.T/259,Raw,Model,
+CD/COM/MO.T/260,Raw,Model,
+CD/COM/MO.T/261,Raw,Model,
+CD/COM/MO.T/262,Raw,Model,
+CD/COM/MO.T/263,Raw,Model,
+CD/COM/MO.T/264,Raw,Model,
+CD/COM/MO.T/265,Raw,Model,
+CD/COM/MO.T/266,Raw,Model,
+CD/COM/MO.T/267,Raw,Model,
+CD/COM/MO.T/268,Raw,Model,
+CD/COM/MO.T/269,Raw,Model,
+CD/COM/MO.T/270,Raw,Model,
+CD/COM/MO.T/271,Raw,Model,
+CD/COM/MO.T/272,Raw,Model,
+CD/COM/MO.T/273,Raw,Model,
+CD/COM/MO.T/274,Raw,Model,
+CD/COM/MO.T/275,Raw,Model,
+CD/COM/MO.T/276,Raw,Model,
+CD/COM/MO.T/277,Raw,Model,
+CD/COM/MO.T/278,Raw,Model,
+CD/COM/MO.T/279,Raw,Model,
+CD/COM/MO.T/280,Raw,Model,
+CD/COM/MO.T/281,Raw,Model,
+CD/COM/MO.T/282,Raw,Model,
+CD/COM/MO.T/283,Raw,Model,
+CD/COM/MO.T/284,Raw,Model,
+CD/COM/MO.T/285,Raw,Model,
+CD/COM/MO.T/286,Raw,Model,
+CD/COM/MO.T/287,Raw,Model,
+CD/COM/MO.T/288,Raw,Model,
+CD/COM/MO.T/289,Raw,Model,
+CD/COM/MO.T/290,Raw,Model,
+CD/COM/MO.T/291,Raw,Model,
+CD/COM/MO.T/292,Raw,Model,
+CD/COM/MO.T/293,Raw,Model,
+CD/COM/MO.T/294,Raw,Model,
+CD/COM/MO.T/295,Raw,Model,
+CD/COM/MO.T/296,Raw,Model,
+CD/COM/MO.T/297,Raw,Model,
+CD/COM/MO.T/298,Raw,Model,
+CD/COM/MO.T/299,Raw,Model,
+CD/COM/MO.T/300,Raw,Model,
+CD/COM/MO.T/301,Raw,Model,
+CD/COM/MO.T/302,Raw,Model,
+CD/COM/MO.T/303,Raw,Model,
+CD/COM/MO.T/304,Raw,Model,
+CD/COM/MO.T/305,Raw,Model,
+CD/COM/MO.T/306,Raw,Model,
+CD/COM/MO.T/307,Raw,Model,
+CD/COM/MO.T/308,Raw,Model,
+CD/COM/MO.T/309,Raw,Model,
+CD/COM/MO.T/310,Raw,Model,
+CD/COM/MO.T/311,Raw,Model,
+CD/COM/MO.T/312,Raw,Model,
+CD/COM/MO.T/313,Raw,Model,
+CD/COM/MO.T/314,Raw,Model,
+CD/COM/MO.T/315,Raw,Model,
+CD/COM/MO.T/316,Raw,Model,
+CD/COM/MO.T/317,Raw,Model,
+CD/COM/MO.T/318,Raw,Model,
+CD/COM/MO.T/319,Raw,Model,
+CD/COM/MO.T/320,Raw,Model,
+CD/COM/MO.T/321,Raw,Model,
+CD/COM/MO.T/322,Raw,Model,
+CD/COM/MO.T/323,Raw,Model,
+CD/COM/MO.T/324,Raw,Model,
+CD/COM/MO.T/325,Raw,Model,
+CD/COM/MO.T/326,Raw,Model,
+CD/COM/MO.T/327,Raw,Model,
+CD/COM/MO.T/328,Raw,Model,
+CD/COM/MO.T/329,Raw,Model,
+CD/COM/MO.T/330,Raw,Model,
+CD/COM/MO.T/331,Raw,Model,
+CD/COM/MO.T/332,Raw,Model,
+CD/COM/MO.T/333,Raw,Model,
+CD/COM/MO.T/334,Raw,Model,
+CD/COM/MO.T/335,Raw,Model,
+CD/COM/MO.T/336,Raw,Model,
+CD/COM/MO.T/337,Raw,Model,
+CD/COM/MO.T/338,Raw,Model,
+CD/COM/MO.T/339,Raw,Model,
+CD/COM/MO.T/340,Raw,Model,
+CD/COM/MO.T/341,Raw,Model,
+CD/COM/MO.T/342,Raw,Model,
+CD/COM/MO.T/343,Raw,Model,
+CD/COM/MO.T/344,Raw,Model,
+CD/COM/MO.T/345,Raw,Model,
+CD/COM/MO.T/346,Raw,Model,
+CD/COM/MO.T/347,Raw,Model,
+CD/COM/MO.T/348,Raw,Model,
+CD/COM/MO.T/349,Raw,Model,
+CD/COM/MO.T/350,Raw,Model,
+CD/COM/MO.T/351,Raw,Model,
+CD/COM/MO.T/352,Raw,Model,
+CD/COM/MO.T/353,Raw,Model,
+CD/COM/MO.T/354,Raw,Model,
+CD/COM/MO.T/355,Raw,Model,
+CD/COM/MO.T/356,Raw,Model,
+CD/COM/MO.T/357,Raw,Model,
+CD/COM/MO.T/358,Raw,Model,
+CD/COM/MO.T/359,Raw,Model,
+CD/COM/MO.T/360,Raw,Model,
+CD/COM/MO.T/361,Raw,Model,
+CD/COM/MO.T/362,Raw,Model,
+CD/COM/MO.T/363,Raw,Model,
+CD/COM/MO.T/364,Raw,Model,
+CD/COM/MO.T/365,Raw,Model,
+CD/COM/MO.T/366,Raw,Model,
+CD/COM/MO.T/367,Raw,Model,
+CD/COM/MO.T/368,Raw,Model,
+CD/COM/MO.T/369,Raw,Model,
+CD/COM/MO.T/370,Raw,Model,
+CD/COM/MO.T/371,Raw,Model,
+CD/COM/MO.T/372,Raw,Model,
+CD/COM/MO.T/373,Raw,Model,
+CD/COM/MO.T/374,Raw,Model,
+CD/COM/MO.T/375,Raw,Model,
+CD/COM/MO.T/376,Raw,Model,
+CD/COM/MO.T/377,Raw,Model,
+CD/COM/MO.T/378,Raw,Model,
+CD/COM/MO.T/379,Raw,Model,
+CD/COM/MO.T/380,Raw,Model,
+CD/COM/MO.T/381,Raw,Model,
+CD/COM/MO.T/382,Raw,Model,
+CD/COM/MO.T/383,Raw,Model,
+CD/COM/MO.T/384,Raw,Model,
+CD/COM/MO.T/385,Raw,Model,
+CD/COM/MO.T/386,Raw,Model,
+CD/COM/MO.T/387,Raw,Model,
+CD/COM/MO.T/388,Raw,Model,
+CD/COM/MO.T/389,Raw,Model,
+CD/COM/MO.T/390,Raw,Model,
+CD/COM/MO.T/391,Raw,Model,
+CD/COM/MO.T/392,Raw,Model,
+CD/COM/MO.T/393,Raw,Model,
+CD/COM/MO.T/394,Raw,Model,
+CD/COM/MO.T/395,Raw,Model,
+CD/COM/MO.T/396,Raw,Model,
+CD/COM/MO.T/397,Raw,Model,
+CD/COM/MO.T/398,Raw,Model,
+CD/COM/MO.T/399,Raw,Model,
+CD/COM/MO.T/400,Raw,Model,
+CD/COM/MO.T/401,Raw,Model,
+CD/COM/MO.T/402,Raw,Model,
+CD/COM/MO.T/403,Raw,Model,
+CD/COM/MO.T/404,Raw,Model,
+CD/COM/RTIM.T,T,Container,
+CD/COM/RTIM.T/0,Raw,TextureDB,Western Shore Map Textures
+CD/COM/RTIM.T/1,Raw,TextureDB,Garrison Map Textures
+CD/COM/RTIM.T/2,Raw,TextureDB,Central Village Map Textures
+CD/COM/RTIM.T/3,Raw,TextureDB,East Village Map Textures
+CD/COM/RTIM.T/4,Raw,TextureDB,Cathedral Map Textures
+CD/COM/RTIM.T/5,Raw,TextureDB,Big Mine Map Textures
+CD/COM/RTIM.T/6,Raw,TextureDB,Necron’s Coliseum Map Textures
+CD/COM/RTIM.T/7,Raw,TextureDB,Guyra’s Lair Map Textures
+CD/COM/RTIM.T/8,Raw,TextureDB,Debug Map Textures
+CD/COM/RTIM.T/9,Raw,TextureDB,
+CD/COM/RTIM.T/10,Raw,TextureDB,
+CD/COM/RTIM.T/11,Raw,TextureDB,
+CD/COM/RTIM.T/12,Raw,TextureDB,
+CD/COM/RTIM.T/13,Raw,TextureDB,
+CD/COM/RTIM.T/14,Raw,TextureDB,
+CD/COM/RTIM.T/15,Raw,TextureDB,
+CD/COM/RTIM.T/16,Raw,TextureDB,“Picture of a King” Texture
+CD/COM/RTIM.T/17,Raw,TextureDB,
+CD/COM/RTIM.T/18,Raw,TextureDB,
+CD/COM/RTIM.T/19,Raw,TextureDB,
+CD/COM/RTIM.T/20,Raw,TextureDB,
+CD/COM/RTIM.T/21,Raw,TextureDB,
+CD/COM/RTIM.T/22,Raw,TextureDB,
+CD/COM/RTIM.T/23,Raw,TextureDB,Village House 01 Textures
+CD/COM/RTIM.T/24,Raw,TextureDB,Village House 02 Textures
+CD/COM/RTIM.T/25,Raw,TextureDB,
+CD/COM/RTIM.T/26,Raw,TextureDB,
+CD/COM/RTIM.T/27,Raw,TextureDB,
+CD/COM/RTIM.T/28,Raw,TextureDB,Seath’s Door Textures
+CD/COM/RTIM.T/29,Raw,TextureDB,“The Picture of Warriors” Texture
+CD/COM/RTIM.T/30,Raw,TextureDB,
+CD/COM/RTIM.T/31,Raw,TextureDB,
+CD/COM/RTIM.T/32,Raw,TextureDB,
+CD/COM/RTIM.T/33,Raw,TextureDB,
+CD/COM/RTIM.T/34,Raw,TextureDB,
+CD/COM/RTIM.T/35,Raw,TextureDB,
+CD/COM/RTIM.T/36,Raw,TextureDB,
+CD/COM/RTIM.T/37,Raw,TextureDB,
+CD/COM/RTIM.T/38,Raw,TextureDB,
+CD/COM/RTIM.T/39,Raw,TextureDB,
+CD/COM/RTIM.T/40,Raw,TextureDB,
+CD/COM/RTIM.T/41,Raw,TextureDB,
+CD/COM/RTIM.T/42,Raw,TextureDB,
+CD/COM/RTIM.T/43,Raw,TextureDB,
+CD/COM/RTIM.T/44,Raw,TextureDB,
+CD/COM/RTIM.T/45,Raw,TextureDB,
+CD/COM/RTIM.T/46,Raw,TextureDB,
+CD/COM/RTIM.T/47,Raw,TextureDB,
+CD/COM/RTIM.T/48,Raw,TextureDB,
+CD/COM/RTIM.T/49,Raw,TextureDB,
+CD/COM/RTIM.T/50,Raw,TextureDB,
+CD/COM/RTIM.T/51,Raw,TextureDB,
+CD/COM/RTIM.T/52,Raw,TextureDB,
+CD/COM/RTIM.T/53,Raw,TextureDB,
+CD/COM/RTIM.T/54,Raw,TextureDB,
+CD/COM/RTIM.T/55,Raw,TextureDB,
+CD/COM/RTIM.T/56,Raw,TextureDB,
+CD/COM/RTIM.T/57,Raw,TextureDB,
+CD/COM/RTIM.T/58,Raw,TextureDB,
+CD/COM/RTIM.T/59,Raw,TextureDB,
+CD/COM/RTIM.T/60,Raw,TextureDB,
+CD/COM/RTIM.T/61,Raw,TextureDB,
+CD/COM/RTIM.T/62,Raw,TextureDB,
+CD/COM/RTIM.T/63,Raw,TextureDB,
+CD/COM/RTIM.T/64,Raw,TextureDB,
+CD/COM/RTIM.T/65,Raw,TextureDB,Seath’s Floor and Door™
+CD/COM/RTIM.T/66,Raw,TextureDB,
+CD/COM/RTIM.T/67,Raw,TextureDB,
+CD/COM/RTIM.T/68,Raw,TextureDB,
+CD/COM/RTIM.T/69,Raw,TextureDB,
+CD/COM/RTIM.T/70,Raw,TextureDB,
+CD/COM/RTIM.T/71,Raw,TextureDB,
+CD/COM/RTMD.T,T,Container,
+CD/COM/RTMD.T/0,Raw,Model,Western Shore Map Tileset
+CD/COM/RTMD.T/1,Raw,Model,Garrison Map Tileset
+CD/COM/RTMD.T/2,Raw,Model,Central Village Map Tileset
+CD/COM/RTMD.T/3,Raw,Model,East Village Map Tileset
+CD/COM/RTMD.T/4,Raw,Model,Cathedral Map Tileset
+CD/COM/RTMD.T/5,Raw,Model,Big Mine Map Tileset
+CD/COM/RTMD.T/6,Raw,Model,Necron’s Coliseum Map Tileset
+CD/COM/RTMD.T/7,Raw,Model,Guyra’s Lair Map Tileset
+CD/COM/RTMD.T/8,Raw,Model,Debug Map Tileset
+CD/COM/TALK.T,T,Container,
+CD/COM/TALK.T/0,Raw,TextureDB,
+CD/COM/TALK.T/1,Raw,TextureDB,
+CD/COM/TALK.T/2,Raw,TextureDB,
+CD/COM/TALK.T/3,Raw,TextureDB,
+CD/COM/TALK.T/4,Raw,TextureDB,
+CD/COM/TALK.T/5,Raw,TextureDB,
+CD/COM/TALK.T/6,Raw,TextureDB,
+CD/COM/TALK.T/7,Raw,TextureDB,
+CD/COM/TALK.T/8,Raw,TextureDB,
+CD/COM/TALK.T/9,Raw,TextureDB,
+CD/COM/TALK.T/10,Raw,TextureDB,
+CD/COM/TALK.T/11,Raw,TextureDB,
+CD/COM/TALK.T/12,Raw,TextureDB,
+CD/COM/TALK.T/13,Raw,TextureDB,
+CD/COM/TALK.T/14,Raw,TextureDB,
+CD/COM/TALK.T/15,Raw,TextureDB,
+CD/COM/TALK.T/16,Raw,TextureDB,
+CD/COM/TALK.T/17,Raw,TextureDB,
+CD/COM/TALK.T/18,Raw,TextureDB,
+CD/COM/TALK.T/19,Raw,TextureDB,
+CD/COM/TALK.T/20,Raw,TextureDB,
+CD/COM/TALK.T/21,Raw,TextureDB,
+CD/COM/TALK.T/22,Raw,TextureDB,
+CD/COM/TALK.T/23,Raw,TextureDB,
+CD/COM/TALK.T/24,Raw,TextureDB,
+CD/COM/TALK.T/25,Raw,TextureDB,
+CD/COM/TALK.T/26,Raw,TextureDB,
+CD/COM/TALK.T/27,Raw,TextureDB,
+CD/COM/TALK.T/28,Raw,TextureDB,
+CD/COM/TALK.T/29,Raw,TextureDB,
+CD/COM/TALK.T/30,Raw,TextureDB,
+CD/COM/TALK.T/31,Raw,TextureDB,
+CD/COM/TALK.T/32,Raw,TextureDB,
+CD/COM/TALK.T/33,Raw,TextureDB,
+CD/COM/TALK.T/34,Raw,TextureDB,
+CD/COM/TALK.T/35,Raw,TextureDB,
+CD/COM/TALK.T/36,Raw,TextureDB,
+CD/COM/TALK.T/37,Raw,TextureDB,
+CD/COM/TALK.T/38,Raw,TextureDB,
+CD/COM/TALK.T/39,Raw,TextureDB,
+CD/COM/TALK.T/40,Raw,TextureDB,
+CD/COM/TALK.T/41,Raw,TextureDB,
+CD/COM/TALK.T/42,Raw,TextureDB,
+CD/COM/TALK.T/43,Raw,TextureDB,
+CD/COM/TALK.T/44,Raw,TextureDB,
+CD/COM/TALK.T/45,Raw,TextureDB,
+CD/COM/TALK.T/46,Raw,TextureDB,
+CD/COM/TALK.T/47,Raw,TextureDB,
+CD/COM/TALK.T/48,Raw,TextureDB,
+CD/COM/TALK.T/49,Raw,TextureDB,
+CD/COM/TALK.T/50,Raw,TextureDB,
+CD/COM/TALK.T/51,Raw,TextureDB,
+CD/COM/TALK.T/52,Raw,TextureDB,
+CD/COM/TALK.T/53,Raw,TextureDB,
+CD/COM/TALK.T/54,Raw,TextureDB,
+CD/COM/TALK.T/55,Raw,TextureDB,
+CD/COM/TALK.T/56,Raw,TextureDB,
+CD/COM/TALK.T/57,Raw,TextureDB,
+CD/COM/TALK.T/58,Raw,TextureDB,Jose Harven Dialogue 1
+CD/COM/TALK.T/59,Raw,TextureDB,Jose Harven Dialogue 2
+CD/COM/TALK.T/60,Raw,TextureDB,Jose Harven Dialogue 3
+CD/COM/TALK.T/61,Raw,TextureDB,Jose Harven Dialogue 4
+CD/COM/TALK.T/62,Raw,TextureDB,Jose Harven Dialogue 5
+CD/COM/TALK.T/63,Raw,TextureDB,Jose Harven Dialogue 6
+CD/COM/TALK.T/64,Raw,TextureDB,Jose Harven Dialogue 7
+CD/COM/TALK.T/65,Raw,TextureDB,
+CD/COM/TALK.T/66,Raw,TextureDB,
+CD/COM/TALK.T/67,Raw,TextureDB,
+CD/COM/TALK.T/68,Raw,TextureDB,
+CD/COM/TALK.T/69,Raw,TextureDB,
+CD/COM/TALK.T/70,Raw,TextureDB,
+CD/COM/TALK.T/71,Raw,TextureDB,
+CD/COM/TALK.T/72,Raw,TextureDB,
+CD/COM/TALK.T/73,Raw,TextureDB,
+CD/COM/TALK.T/74,Raw,TextureDB,
+CD/COM/TALK.T/75,Raw,TextureDB,
+CD/COM/TALK.T/76,Raw,TextureDB,
+CD/COM/TALK.T/77,Raw,TextureDB,
+CD/COM/TALK.T/78,Raw,TextureDB,
+CD/COM/TALK.T/79,Raw,TextureDB,
+CD/COM/TALK.T/80,Raw,TextureDB,
+CD/COM/TALK.T/81,Raw,TextureDB,
+CD/COM/TALK.T/82,Raw,TextureDB,
+CD/COM/TALK.T/83,Raw,TextureDB,
+CD/COM/TALK.T/84,Raw,TextureDB,
+CD/COM/TALK.T/85,Raw,TextureDB,
+CD/COM/TALK.T/86,Raw,TextureDB,
+CD/COM/TALK.T/87,Raw,TextureDB,
+CD/COM/TALK.T/88,Raw,TextureDB,
+CD/COM/TALK.T/89,Raw,TextureDB,
+CD/COM/TALK.T/90,Raw,TextureDB,
+CD/COM/TALK.T/91,Raw,TextureDB,
+CD/COM/TALK.T/92,Raw,TextureDB,
+CD/COM/TALK.T/93,Raw,TextureDB,
+CD/COM/TALK.T/94,Raw,TextureDB,
+CD/COM/TALK.T/95,Raw,TextureDB,
+CD/COM/TALK.T/96,Raw,TextureDB,
+CD/COM/TALK.T/97,Raw,TextureDB,
+CD/COM/TALK.T/98,Raw,TextureDB,
+CD/COM/TALK.T/99,Raw,TextureDB,
+CD/COM/TALK.T/100,Raw,TextureDB,
+CD/COM/TALK.T/101,Raw,TextureDB,
+CD/COM/TALK.T/102,Raw,TextureDB,
+CD/COM/TALK.T/103,Raw,TextureDB,
+CD/COM/TALK.T/104,Raw,TextureDB,
+CD/COM/TALK.T/105,Raw,TextureDB,
+CD/COM/TALK.T/106,Raw,TextureDB,
+CD/COM/TALK.T/107,Raw,TextureDB,
+CD/COM/TALK.T/108,Raw,TextureDB,
+CD/COM/TALK.T/109,Raw,TextureDB,
+CD/COM/TALK.T/110,Raw,TextureDB,
+CD/COM/TALK.T/111,Raw,TextureDB,
+CD/COM/TALK.T/112,Raw,TextureDB,
+CD/COM/TALK.T/113,Raw,TextureDB,
+CD/COM/TALK.T/114,Raw,TextureDB,
+CD/COM/TALK.T/115,Raw,TextureDB,
+CD/COM/TALK.T/116,Raw,TextureDB,
+CD/COM/TALK.T/117,Raw,TextureDB,
+CD/COM/TALK.T/118,Raw,TextureDB,
+CD/COM/TALK.T/119,Raw,TextureDB,
+CD/COM/TALK.T/120,Raw,TextureDB,
+CD/COM/TALK.T/121,Raw,TextureDB,
+CD/COM/TALK.T/122,Raw,TextureDB,
+CD/COM/TALK.T/123,Raw,TextureDB,
+CD/COM/TALK.T/124,Raw,TextureDB,
+CD/COM/TALK.T/125,Raw,TextureDB,
+CD/COM/TALK.T/126,Raw,TextureDB,
+CD/COM/TALK.T/127,Raw,TextureDB,
+CD/COM/TALK.T/128,Raw,TextureDB,
+CD/COM/TALK.T/129,Raw,TextureDB,
+CD/COM/TALK.T/130,Raw,TextureDB,
+CD/COM/TALK.T/131,Raw,TextureDB,
+CD/COM/TALK.T/132,Raw,TextureDB,
+CD/COM/TALK.T/133,Raw,TextureDB,
+CD/COM/TALK.T/134,Raw,TextureDB,
+CD/COM/TALK.T/135,Raw,TextureDB,
+CD/COM/TALK.T/136,Raw,TextureDB,
+CD/COM/TALK.T/137,Raw,TextureDB,
+CD/COM/TALK.T/138,Raw,TextureDB,
+CD/COM/TALK.T/139,Raw,TextureDB,
+CD/COM/TALK.T/140,Raw,TextureDB,
+CD/COM/TALK.T/141,Raw,TextureDB,
+CD/COM/TALK.T/142,Raw,TextureDB,
+CD/COM/TALK.T/143,Raw,TextureDB,
+CD/COM/TALK.T/144,Raw,TextureDB,
+CD/COM/TALK.T/145,Raw,TextureDB,
+CD/COM/TALK.T/146,Raw,TextureDB,
+CD/COM/TALK.T/147,Raw,TextureDB,
+CD/COM/TALK.T/148,Raw,TextureDB,
+CD/COM/TALK.T/149,Raw,TextureDB,
+CD/COM/TALK.T/150,Raw,TextureDB,
+CD/COM/TALK.T/151,Raw,TextureDB,
+CD/COM/TALK.T/152,Raw,TextureDB,
+CD/COM/TALK.T/153,Raw,TextureDB,
+CD/COM/TALK.T/154,Raw,TextureDB,
+CD/COM/TALK.T/155,Raw,TextureDB,
+CD/COM/TALK.T/156,Raw,TextureDB,
+CD/COM/TALK.T/157,Raw,TextureDB,
+CD/COM/TALK.T/158,Raw,TextureDB,
+CD/COM/TALK.T/159,Raw,TextureDB,
+CD/COM/TALK.T/160,Raw,TextureDB,
+CD/COM/TALK.T/161,Raw,TextureDB,
+CD/COM/TALK.T/162,Raw,TextureDB,
+CD/COM/TALK.T/163,Raw,TextureDB,
+CD/COM/TALK.T/164,Raw,TextureDB,
+CD/COM/TALK.T/165,Raw,TextureDB,
+CD/COM/TALK.T/166,Raw,TextureDB,
+CD/COM/TALK.T/167,Raw,TextureDB,
+CD/COM/TALK.T/168,Raw,TextureDB,
+CD/COM/TALK.T/169,Raw,TextureDB,
+CD/COM/TALK.T/170,Raw,TextureDB,
+CD/COM/TALK.T/171,Raw,TextureDB,
+CD/COM/TALK.T/172,Raw,TextureDB,
+CD/COM/TALK.T/173,Raw,TextureDB,
+CD/COM/TALK.T/174,Raw,TextureDB,
+CD/COM/TALK.T/175,Raw,TextureDB,
+CD/COM/TALK.T/176,Raw,TextureDB,
+CD/COM/TALK.T/177,Raw,TextureDB,
+CD/COM/TALK.T/178,Raw,TextureDB,
+CD/COM/TALK.T/179,Raw,TextureDB,
+CD/COM/TALK.T/180,Raw,TextureDB,
+CD/COM/TALK.T/181,Raw,TextureDB,
+CD/COM/TALK.T/182,Raw,TextureDB,
+CD/COM/TALK.T/183,Raw,TextureDB,
+CD/COM/TALK.T/184,Raw,TextureDB,
+CD/COM/TALK.T/185,Raw,TextureDB,
+CD/COM/TALK.T/186,Raw,TextureDB,
+CD/COM/TALK.T/187,Raw,TextureDB,
+CD/COM/TALK.T/188,Raw,TextureDB,
+CD/COM/TALK.T/189,Raw,TextureDB,
+CD/COM/TALK.T/190,Raw,TextureDB,
+CD/COM/TALK.T/191,Raw,TextureDB,
+CD/COM/TALK.T/192,Raw,TextureDB,
+CD/COM/TALK.T/193,Raw,TextureDB,
+CD/COM/TALK.T/194,Raw,TextureDB,
+CD/COM/TALK.T/195,Raw,TextureDB,
+CD/COM/TALK.T/196,Raw,TextureDB,
+CD/COM/TALK.T/197,Raw,TextureDB,
+CD/COM/TALK.T/198,Raw,TextureDB,
+CD/COM/TALK.T/199,Raw,TextureDB,
+CD/COM/TALK.T/200,Raw,TextureDB,
+CD/COM/TALK.T/201,Raw,TextureDB,
+CD/COM/TALK.T/202,Raw,TextureDB,
+CD/COM/TALK.T/203,Raw,TextureDB,
+CD/COM/TALK.T/204,Raw,TextureDB,
+CD/COM/TALK.T/205,Raw,TextureDB,
+CD/COM/TALK.T/206,Raw,TextureDB,
+CD/COM/TALK.T/207,Raw,TextureDB,
+CD/COM/TALK.T/208,Raw,TextureDB,
+CD/COM/TALK.T/209,Raw,TextureDB,
+CD/COM/TALK.T/210,Raw,TextureDB,
+CD/COM/TALK.T/211,Raw,TextureDB,
+CD/COM/TALK.T/212,Raw,TextureDB,
+CD/COM/TALK.T/213,Raw,TextureDB,
+CD/COM/TALK.T/214,Raw,TextureDB,
+CD/COM/TALK.T/215,Raw,TextureDB,
+CD/COM/TALK.T/216,Raw,TextureDB,
+CD/COM/TALK.T/217,Raw,TextureDB,
+CD/COM/TALK.T/218,Raw,TextureDB,
+CD/COM/TALK.T/219,Raw,TextureDB,
+CD/COM/TALK.T/220,Raw,TextureDB,
+CD/COM/TALK.T/221,Raw,TextureDB,
+CD/COM/TALK.T/222,Raw,TextureDB,
+CD/COM/TALK.T/223,Raw,TextureDB,
+CD/COM/TALK.T/224,Raw,TextureDB,
+CD/COM/TALK.T/225,Raw,TextureDB,
+CD/COM/TALK.T/226,Raw,TextureDB,
+CD/COM/TALK.T/227,Raw,TextureDB,
+CD/COM/TALK.T/228,Raw,TextureDB,
+CD/COM/TALK.T/229,Raw,TextureDB,
+CD/COM/TALK.T/230,Raw,TextureDB,
+CD/COM/TALK.T/231,Raw,TextureDB,
+CD/COM/TALK.T/232,Raw,TextureDB,
+CD/COM/TALK.T/233,Raw,TextureDB,
+CD/COM/TALK.T/234,Raw,TextureDB,
+CD/COM/TALK.T/235,Raw,TextureDB,
+CD/COM/TALK.T/236,Raw,TextureDB,
+CD/COM/TALK.T/237,Raw,TextureDB,
+CD/COM/TALK.T/238,Raw,TextureDB,
+CD/COM/TALK.T/239,Raw,TextureDB,
+CD/COM/TALK.T/240,Raw,TextureDB,
+CD/COM/TALK.T/241,Raw,TextureDB,
+CD/COM/TALK.T/242,Raw,TextureDB,
+CD/COM/TALK.T/243,Raw,TextureDB,
+CD/COM/TALK.T/244,Raw,TextureDB,
+CD/COM/TALK.T/245,Raw,TextureDB,
+CD/COM/TALK.T/246,Raw,TextureDB,
+CD/COM/TALK.T/247,Raw,TextureDB,
+CD/COM/TALK.T/248,Raw,TextureDB,
+CD/COM/TALK.T/249,Raw,TextureDB,
+CD/COM/TALK.T/250,Raw,TextureDB,
+CD/COM/TALK.T/251,Raw,TextureDB,
+CD/COM/TALK.T/252,Raw,TextureDB,
+CD/COM/TALK.T/253,Raw,TextureDB,
+CD/COM/TALK.T/254,Raw,TextureDB,
+CD/COM/TALK.T/255,Raw,TextureDB,
+CD/COM/TALK.T/256,Raw,TextureDB,
+CD/COM/TALK.T/257,Raw,TextureDB,
+CD/COM/TALK.T/258,Raw,TextureDB,
+CD/COM/TALK.T/259,Raw,TextureDB,
+CD/COM/TALK.T/260,Raw,TextureDB,
+CD/COM/TALK.T/261,Raw,TextureDB,
+CD/COM/TALK.T/262,Raw,TextureDB,
+CD/COM/TALK.T/263,Raw,TextureDB,
+CD/COM/TALK.T/264,Raw,TextureDB,
+CD/COM/TALK.T/265,Raw,TextureDB,
+CD/COM/TALK.T/266,Raw,TextureDB,
+CD/COM/TALK.T/267,Raw,TextureDB,
+CD/COM/TALK.T/268,Raw,TextureDB,
+CD/COM/TALK.T/269,Raw,TextureDB,
+CD/COM/TALK.T/270,Raw,TextureDB,
+CD/COM/TALK.T/271,Raw,TextureDB,
+CD/COM/TALK.T/272,Raw,TextureDB,
+CD/COM/TALK.T/273,Raw,TextureDB,
+CD/COM/TALK.T/274,Raw,TextureDB,
+CD/COM/TALK.T/275,Raw,TextureDB,
+CD/COM/TALK.T/276,Raw,TextureDB,
+CD/COM/TALK.T/277,Raw,TextureDB,
+CD/COM/TALK.T/278,Raw,TextureDB,
+CD/COM/TALK.T/279,Raw,TextureDB,
+CD/COM/TALK.T/280,Raw,TextureDB,
+CD/COM/TALK.T/281,Raw,TextureDB,
+CD/COM/TALK.T/282,Raw,TextureDB,
+CD/COM/TALK.T/283,Raw,TextureDB,
+CD/COM/TALK.T/284,Raw,TextureDB,
+CD/COM/TALK.T/285,Raw,TextureDB,
+CD/COM/TALK.T/286,Raw,TextureDB,
+CD/COM/TALK.T/287,Raw,TextureDB,
+CD/COM/TALK.T/288,Raw,TextureDB,
+CD/COM/TALK.T/289,Raw,TextureDB,
+CD/COM/TALK.T/290,Raw,TextureDB,
+CD/COM/TALK.T/291,Raw,TextureDB,
+CD/COM/TALK.T/292,Raw,TextureDB,
+CD/COM/TALK.T/293,Raw,TextureDB,
+CD/COM/TALK.T/294,Raw,TextureDB,
+CD/COM/TALK.T/295,Raw,TextureDB,
+CD/COM/TALK.T/296,Raw,TextureDB,
+CD/COM/TALK.T/297,Raw,TextureDB,
+CD/COM/TALK.T/298,Raw,TextureDB,
+CD/COM/TALK.T/299,Raw,TextureDB,
+CD/COM/TALK.T/300,Raw,TextureDB,
+CD/COM/TALK.T/301,Raw,TextureDB,
+CD/COM/TALK.T/302,Raw,TextureDB,
+CD/COM/TALK.T/303,Raw,TextureDB,
+CD/COM/TALK.T/304,Raw,TextureDB,
+CD/COM/TALK.T/305,Raw,TextureDB,
+CD/COM/TALK.T/306,Raw,TextureDB,
+CD/COM/TALK.T/307,Raw,TextureDB,
+CD/COM/TALK.T/308,Raw,TextureDB,
+CD/COM/TALK.T/309,Raw,TextureDB,
+CD/COM/TALK.T/310,Raw,TextureDB,
+CD/COM/TALK.T/311,Raw,TextureDB,
+CD/COM/TALK.T/312,Raw,TextureDB,
+CD/COM/TALK.T/313,Raw,TextureDB,
+CD/COM/TALK.T/314,Raw,TextureDB,
+CD/COM/TALK.T/315,Raw,TextureDB,
+CD/COM/TALK.T/316,Raw,TextureDB,
+CD/COM/TALK.T/317,Raw,TextureDB,
+CD/COM/TALK.T/318,Raw,TextureDB,
+CD/COM/TALK.T/319,Raw,TextureDB,
+CD/COM/TALK.T/320,Raw,TextureDB,
+CD/COM/TALK.T/321,Raw,TextureDB,
+CD/COM/TALK.T/322,Raw,TextureDB,
+CD/COM/TALK.T/323,Raw,TextureDB,
+CD/COM/TALK.T/324,Raw,TextureDB,
+CD/COM/TALK.T/325,Raw,TextureDB,
+CD/COM/TALK.T/326,Raw,TextureDB,
+CD/COM/TALK.T/327,Raw,TextureDB,
+CD/COM/TALK.T/328,Raw,TextureDB,
+CD/COM/TALK.T/329,Raw,TextureDB,
+CD/COM/TALK.T/330,Raw,TextureDB,
+CD/COM/TALK.T/331,Raw,TextureDB,
+CD/COM/TALK.T/332,Raw,TextureDB,
+CD/COM/TALK.T/333,Raw,TextureDB,
+CD/COM/TALK.T/334,Raw,TextureDB,
+CD/COM/TALK.T/335,Raw,TextureDB,
+CD/COM/TALK.T/336,Raw,TextureDB,
+CD/COM/TALK.T/337,Raw,TextureDB,
+CD/COM/TALK.T/338,Raw,TextureDB,
+CD/COM/TALK.T/339,Raw,TextureDB,
+CD/COM/TALK.T/340,Raw,TextureDB,
+CD/COM/TALK.T/341,Raw,TextureDB,
+CD/COM/TALK.T/342,Raw,TextureDB,
+CD/COM/TALK.T/343,Raw,TextureDB,
+CD/COM/TALK.T/344,Raw,TextureDB,
+CD/COM/TALK.T/345,Raw,TextureDB,
+CD/COM/TALK.T/346,Raw,TextureDB,
+CD/COM/TALK.T/347,Raw,TextureDB,
+CD/COM/TALK.T/348,Raw,TextureDB,
+CD/COM/TALK.T/349,Raw,TextureDB,
+CD/COM/TALK.T/350,Raw,TextureDB,
+CD/COM/TALK.T/351,Raw,TextureDB,
+CD/COM/TALK.T/352,Raw,TextureDB,
+CD/COM/TALK.T/353,Raw,TextureDB,
+CD/COM/TALK.T/354,Raw,TextureDB,
+CD/COM/TALK.T/355,Raw,TextureDB,
+CD/COM/TALK.T/356,Raw,TextureDB,
+CD/COM/TALK.T/357,Raw,TextureDB,
+CD/COM/TALK.T/358,Raw,TextureDB,
+CD/COM/TALK.T/359,Raw,TextureDB,
+CD/COM/TALK.T/360,Raw,TextureDB,
+CD/COM/TALK.T/361,Raw,TextureDB,
+CD/COM/TALK.T/362,Raw,TextureDB,
+CD/COM/TALK.T/363,Raw,TextureDB,
+CD/COM/TALK.T/364,Raw,TextureDB,
+CD/COM/TALK.T/365,Raw,TextureDB,
+CD/COM/TALK.T/366,Raw,TextureDB,
+CD/COM/TALK.T/367,Raw,TextureDB,
+CD/COM/TALK.T/368,Raw,TextureDB,
+CD/COM/TALK.T/369,Raw,TextureDB,
+CD/COM/TALK.T/370,Raw,TextureDB,
+CD/COM/TALK.T/371,Raw,TextureDB,
+CD/COM/TALK.T/372,Raw,TextureDB,
+CD/COM/TALK.T/373,Raw,TextureDB,
+CD/COM/TALK.T/374,Raw,TextureDB,
+CD/COM/TALK.T/375,Raw,TextureDB,
+CD/COM/TALK.T/376,Raw,TextureDB,
+CD/COM/TALK.T/377,Raw,TextureDB,
+CD/COM/TALK.T/378,Raw,TextureDB,
+CD/COM/VAB.T,T,Container,
+CD/COM/VAB.T/0,Raw,SoundBankHeader,
+CD/COM/VAB.T/1,Raw,SoundBankBody,
+CD/COM/VAB.T/2,Raw,SoundBankHeader,
+CD/COM/VAB.T/3,Raw,SoundBankBody,
+CD/COM/VAB.T/4,Raw,SoundBankHeader,
+CD/COM/VAB.T/5,Raw,SoundBankBody,
+CD/COM/VAB.T/6,Raw,SoundBankHeader,
+CD/COM/VAB.T/7,Raw,SoundBankBody,
+CD/COM/VAB.T/8,Raw,SoundBankHeader,
+CD/COM/VAB.T/9,Raw,SoundBankBody,
+CD/COM/VAB.T/10,Raw,SoundBankHeader,
+CD/COM/VAB.T/11,Raw,SoundBankBody,
+CD/COM/VAB.T/12,Raw,SoundBankHeader,
+CD/COM/VAB.T/13,Raw,SoundBankBody,
+CD/COM/VAB.T/14,Raw,SoundBankHeader,
+CD/COM/VAB.T/15,Raw,SoundBankBody,
+CD/COM/VAB.T/16,Raw,SoundBankHeader,
+CD/COM/VAB.T/17,Raw,SoundBankBody,
+CD/COM/VAB.T/18,Raw,SoundBankHeader,
+CD/COM/VAB.T/19,Raw,SoundBankBody,
+CD/COM/VAB.T/20,Raw,SoundBankHeader,
+CD/COM/VAB.T/21,Raw,SoundBankBody,
+CD/COM/VAB.T/22,Raw,SoundBankHeader,
+CD/COM/VAB.T/23,Raw,SoundBankBody,
+CD/COM/VAB.T/24,Raw,SoundBankHeader,
+CD/COM/VAB.T/25,Raw,SoundBankBody,
+CD/COM/VAB.T/26,Raw,SoundBankHeader,
+CD/COM/VAB.T/27,Raw,SoundBankBody,
+CD/COM/VAB.T/28,Raw,SoundBankHeader,
+CD/COM/VAB.T/29,Raw,SoundBankBody,
+CD/COM/VAB.T/30,Raw,SoundBankHeader,
+CD/COM/VAB.T/31,Raw,SoundBankBody,
+CD/COM/VAB.T/32,Raw,SoundBankHeader,
+CD/COM/VAB.T/33,Raw,SoundBankBody,
+CD/COM/VAB.T/34,Raw,SoundBankHeader,
+CD/COM/VAB.T/35,Raw,SoundBankBody,
+CD/COM/VAB.T/36,Raw,SoundBankHeader,
+CD/COM/VAB.T/37,Raw,SoundBankBody,
+CD/COM/VAB.T/38,Raw,SoundBankHeader,
+CD/COM/VAB.T/39,Raw,SoundBankBody,
+CD/COM/VAB.T/40,Raw,SoundBankHeader,
+CD/COM/VAB.T/41,Raw,SoundBankBody,
+CD/COM/VAB.T/42,Raw,SoundBankHeader,
+CD/COM/VAB.T/43,Raw,SoundBankBody,
+CD/COM/VAB.T/44,Raw,SoundBankHeader,
+CD/COM/VAB.T/45,Raw,SoundBankBody,
+CD/COM/VAB.T/46,Raw,SoundBankHeader,
+CD/COM/VAB.T/47,Raw,SoundBankBody,
+CD/COM/VAB.T/48,Raw,SoundBankHeader,
+CD/COM/VAB.T/49,Raw,SoundBankBody,
+CD/COM/VAB.T/50,Raw,SoundBankHeader,
+CD/COM/VAB.T/51,Raw,SoundBankBody,
+CD/COM/VAB.T/52,Raw,SoundBankHeader,
+CD/COM/VAB.T/53,Raw,SoundBankBody,
+CD/COM/VAB.T/54,Raw,SoundBankHeader,
+CD/COM/VAB.T/55,Raw,SoundBankBody,
+CD/COM/VAB.T/56,Raw,SoundBankHeader,
+CD/COM/VAB.T/57,Raw,SoundBankBody,
+CD/COM/VAB.T/58,Raw,SoundBankHeader,
+CD/COM/VAB.T/59,Raw,SoundBankBody,
+CD/COM/VAB.T/60,Raw,SoundBankHeader,
+CD/COM/VAB.T/61,Raw,SoundBankBody,
+CD/COM/VAB.T/62,Raw,SoundBankHeader,
+CD/COM/VAB.T/63,Raw,SoundBankBody,
+CD/COM/VAB.T/64,Raw,SoundBankHeader,
+CD/COM/VAB.T/65,Raw,SoundBankBody,
+CD/COM/VAB.T/66,Raw,SoundBankHeader,
+CD/COM/VAB.T/67,Raw,SoundBankBody,
+CD/COM/VAB.T/68,Raw,SoundBankHeader,
+CD/COM/VAB.T/69,Raw,SoundBankBody,
+CD/COM/VAB.T/70,Raw,SoundBankHeader,
+CD/COM/VAB.T/71,Raw,SoundBankBody,
+CD/COM/VAB.T/72,Raw,SoundBankHeader,
+CD/COM/VAB.T/73,Raw,SoundBankBody,
+CD/COM/VAB.T/74,Raw,SoundBankHeader,
+CD/COM/VAB.T/75,Raw,SoundBankBody,
+CD/COM/VAB.T/76,Raw,SoundBankHeader,
+CD/COM/VAB.T/77,Raw,SoundBankBody,
+CD/COM/VAB.T/78,Raw,SoundBankHeader,
+CD/COM/VAB.T/79,Raw,SoundBankBody,
+CD/COM/VAB.T/80,Raw,SoundBankHeader,
+CD/COM/VAB.T/81,Raw,SoundBankBody,
+CD/COM/VAB.T/82,Raw,SoundBankHeader,
+CD/COM/VAB.T/83,Raw,SoundBankBody,
+CD/COM/VAB.T/84,Raw,SoundBankHeader,
+CD/COM/VAB.T/85,Raw,SoundBankBody,
+CD/COM/VAB.T/86,Raw,SoundBankHeader,
+CD/COM/VAB.T/87,Raw,SoundBankBody,
+CD/COM/VAB.T/88,Raw,SoundBankHeader,
+CD/COM/VAB.T/89,Raw,SoundBankBody,
+CD/COM/VAB.T/90,Raw,SoundBankHeader,
+CD/COM/VAB.T/91,Raw,SoundBankBody,
+CD/COM/VAB.T/92,Raw,SoundBankHeader,
+CD/COM/VAB.T/93,Raw,SoundBankBody,
+CD/COM/VAB.T/94,Raw,SoundBankHeader,
+CD/COM/VAB.T/95,Raw,SoundBankBody,
+CD/COM/VAB.T/96,Raw,SoundBankHeader,
+CD/COM/VAB.T/97,Raw,SoundBankBody,
+CD/COM/VAB.T/98,Raw,SoundBankHeader,
+CD/COM/VAB.T/99,Raw,SoundBankBody,
+CD/COM/VAB.T/100,Raw,SoundBankHeader,
+CD/COM/VAB.T/101,Raw,SoundBankBody,
+CD/COM/VAB.T/102,Raw,SoundBankHeader,
+CD/COM/VAB.T/103,Raw,SoundBankBody,
+CD/COM/VAB.T/104,Raw,SoundBankHeader,
+CD/COM/VAB.T/105,Raw,SoundBankBody,
+CD/COM/VAB.T/106,Raw,SoundBankHeader,
+CD/COM/VAB.T/107,Raw,SoundBankBody,
+CD/COM/VAB.T/108,Raw,SoundBankHeader,
+CD/COM/VAB.T/109,Raw,SoundBankBody,
+CD/COM/VAB.T/110,Raw,SoundBankHeader,
+CD/COM/VAB.T/111,Raw,SoundBankBody,
+CD/COM/VAB.T/112,Raw,MusicSequence,Western Shore Map Music
+CD/COM/VAB.T/113,Raw,MusicSequence,Garrison Map Music
+CD/COM/VAB.T/114,Raw,MusicSequence,Central Village Map Music
+CD/COM/VAB.T/115,Raw,MusicSequence,East Village Map Music
+CD/COM/VAB.T/116,Raw,MusicSequence,Cathedral Map Music
+CD/COM/VAB.T/117,Raw,MusicSequence,Big Mine Map Music
+CD/COM/VAB.T/118,Raw,MusicSequence,Necron’s Coliseum Map Music
+CD/COM/VAB.T/119,Raw,MusicSequence,Guyra’s Lair Ambience
+CD/COM/VAB.T/120,Raw,MusicSequence,Guyra Battle Music
+CD/COM/VAB.T/121,Raw,MusicSequence,Central Village Map Music (dupe)

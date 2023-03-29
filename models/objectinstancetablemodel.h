@@ -2,7 +2,7 @@
 #define OBJECTINSTANCETABLEMODEL_H
 
 #include "datahandlers/map.h"
-#include "kf2/object.h"
+#include "types/kf2/object.h"
 #include <QAbstractTableModel>
 
 class ObjectInstanceTableModel : public QAbstractTableModel

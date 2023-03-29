@@ -1,5 +1,5 @@
 #include "shoptablemodel.h"
-#include "kf2/object.h"
+#include "types/kf2/object.h"
 
 QVariant ShopTableModel::headerData(int section, Qt::Orientation orientation, int role) const
 {

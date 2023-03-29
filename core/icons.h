@@ -10,16 +10,21 @@
  */
 namespace Icons
 {
+extern QIcon armour;
 extern QIcon container;
 extern QIcon folder;
 extern QIcon gameDb;
 extern QIcon gameExe;
+extern QIcon levelCurve;
+extern QIcon magic;
 extern QIcon map;
 extern QIcon model;
+extern QIcon objClass;
 extern QIcon soundbankBody;
 extern QIcon soundbankHeader;
 extern QIcon textureDb;
 extern QIcon unknown;
+extern QIcon weapon;
 
 void init();
 } // namespace Icons

@@ -6,7 +6,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui(new Ui::AboutDialog)
 {
     ui->setupUi(this);
-    ui->kfmtLabel->setText("KFModTool r" RUNID);
+    ui->fsmtLabel->setText("FSModTool r" RUNID);
 }
 
 AboutDialog::~AboutDialog()

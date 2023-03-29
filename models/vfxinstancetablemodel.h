@@ -2,7 +2,7 @@
 #define VFXINSTANCETABLEMODEL_H
 
 #include "datahandlers/map.h"
-#include "kf2/vfx.h"
+#include "types/kf2/vfx.h"
 #include <QAbstractTableModel>
 
 class VFXInstanceTableModel : public QAbstractTableModel

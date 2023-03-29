@@ -43,7 +43,8 @@ void MapEditWidget::getTileset(size_t mapIndex)
         case KFMTCore::SimpleGame::KF2: [[fallthrough]];
         case KFMTCore::SimpleGame::KF3: [[fallthrough]];
         case KFMTCore::SimpleGame::KFPS:
-            tileset = std::make_unique<Model>(*core.getFile(u"RTMD.T", mapIndex / 3));
+            tileset = std::make_unique<Model>(
+                *core.files[QStringLiteral(u"CD/COM/RTMD.T/%1").arg(mapIndex / 3)]);
             break;
         default: return;
     }

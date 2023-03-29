@@ -607,26 +607,25 @@ void ModelGLView::buildTexture()
     switch (core.currentGame())
     {
         case KFMTCore::SimpleGame::KF2:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 27));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(27)]);
             break;
         case KFMTCore::SimpleGame::KF3:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 84));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(84)]);
             break;
         case KFMTCore::SimpleGame::KFPS:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 81));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(81)]);
             break;
         default: break;
     }
 
     // We also load appropriate subtextures
-    const auto fileName = model->getFile().fileName();
-    const auto index = model->getFile().indexInContainer();
+    const auto fileName = model->getFile().name();
+    const auto index = fileName.toUInt();
 
-    if (fileName.contains(u"RTMD")) textureDBs.emplace_back(*core.getFile(u"RTIM.T", index));
+    if (fileName.contains(u"RTMD"))
+        textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/RTIM.T/%1").arg(index)]);
     else if (fileName.contains(u"MO"))
-    {
-        textureDBs.emplace_back(*core.getFile(u"RTIM.T", 0));
-    }
+        textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/RTIM.T/0")]);
 
     QImage image({4096, 512}, QImage::Format::Format_RGBA8888);
     QPainter imagePainter(&image);

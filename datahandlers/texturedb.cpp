@@ -6,12 +6,12 @@
 
 TextureDB::TextureDB(KFMTFile& file_) : KFMTDataHandler(file_)
 {
-    if (Utilities::fileIsTIM(file.m_rawData))
+    if (Utilities::fileIsTIM(file.m_data))
     {
         type = TexDBType::TIM;
         loadTIM();
     }
-    else if (Utilities::fileIsRTIM(file.m_rawData))
+    else if (Utilities::fileIsRTIM(file.m_data))
     {
         type = TexDBType::RTIM;
         loadRTIM();
@@ -117,7 +117,7 @@ void TextureDB::saveChanges()
 
 void TextureDB::loadRTIM()
 {
-    QDataStream rtimStream(file.m_rawData);
+    QDataStream rtimStream(file.m_data);
     rtimStream.setByteOrder(QDataStream::LittleEndian);
     
     while (!rtimStream.atEnd())
@@ -136,7 +136,7 @@ void TextureDB::loadRTIM()
 
 void TextureDB::loadTIM()
 {
-    QDataStream timStream(file.m_rawData);
+    QDataStream timStream(file.m_data);
     timStream.setByteOrder(QDataStream::LittleEndian);
     
     uint32_t id;
@@ -346,7 +346,7 @@ void TextureDB::readPixelData(QDataStream & stream, Texture & targetTex)
 
 void TextureDB::writeRTIM()
 {
-    QDataStream outStream(&file.m_rawData, QIODevice::WriteOnly);
+    QDataStream outStream(&file.m_data, QIODevice::WriteOnly);
     outStream.setByteOrder(QDataStream::LittleEndian);
     
     for (const auto &texture : textures)
@@ -358,7 +358,7 @@ void TextureDB::writeRTIM()
 
 void TextureDB::writeTIM()
 {
-    QDataStream outStream(&file.m_rawData, QIODevice::WriteOnly);
+    QDataStream outStream(&file.m_data, QIODevice::WriteOnly);
     outStream.setByteOrder(QDataStream::LittleEndian);
     
     auto &texture = textures.front();

@@ -11,7 +11,7 @@
 namespace Utilities
 {
 template<class T>
-T& as(QByteArray& array, size_t offset = 0)
+T& as(QByteArray& array, uint32_t offset = 0)
 {
     auto* d = array.data();
     d += offset;
@@ -19,13 +19,13 @@ T& as(QByteArray& array, size_t offset = 0)
 }
 
 template<class T>
-const T& as(const QByteArray& array, size_t offset = 0)
+const T& as(const QByteArray& array, uint32_t offset = 0)
 {
     return *reinterpret_cast<const T*>(array.data() + offset);
 }
 
 template<class T>
-const T& as(const uint8_t* ptr, size_t offset = 0)
+const T& as(const uint8_t* ptr, uint32_t offset = 0)
 {
     return *reinterpret_cast<T*>(ptr + offset);
 }
@@ -309,5 +309,16 @@ inline bool fileIsVH(const QByteArray& file)
 {
     return file.left(4).compare(QByteArray::fromHex("70424156")) == 0;
 }
+
+extern const QString valNameStr;
+inline QString valueAndName_(uint32_t val, const QString name)
+{
+    return valNameStr.arg(val).arg(name);
+}
+
 } // namespace Utilities
+
+#define valueAndName(val, name) \
+Utilities::valueAndName_(static_cast<uint32_t>(val), name)
+
 #endif // UTILITIES_H

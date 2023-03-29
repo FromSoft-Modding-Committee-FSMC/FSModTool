@@ -1,27 +1,24 @@
 # FSModTool
-From Software game modding/datamining tool. Breaks often, so be careful!
 
-![FSModTool screenshot](wiki/kfmodtool.png)
+FSModTool is a datamining and modding tool for From Software's PlayStation-era titles, previously known as KFModTool as part of the KingsFieldRE project. It was built with focus on King's Field II, but has some preliminary support for other games as well.
 
-This is the fruit of the community's efforts in understanding how the game works and is here in the hopes that it might provide help to those who are interested in modding or digging into the game.
+This is the fruit of the community's efforts in understanding how these games work and is here in the hopes that it might provide help to those who are interested in helping reverse engineer From Software's early games.
 
-If you need help with FSModTool or would like to discuss early From Software game internals and reverse engineering, join [The FromSoft Modding Committee Discord Server](https://discord.gg/jUzZwWWUXd)!
+If you intend to use FSModTool for modding purposes, please keep regular and plentiful backups of your mod files. It is very experimental software with emphasis on being used for datamining and reverse engineering efforts.
+
+If you need help or would like to discuss early FS game internals and reverse engineering, join [The FromSoft Modding Committee Discord Server](https://discord.gg/jUzZwWWUXd)!
 
 For King's Field IV Tools and Documentation, check out [TheStolenBattenberg's ToolsForKFIV](https://github.com/TheStolenBattenberg/ToolsForKFIV)!
 
-# Technical info
-
-FSModTool is written using C++17 and the Qt Framework.
-
-Automated builds for 64-bit Linux (cross-distribution AppImages based on Ubuntu 16.04) and Windows are available on the project's [Releases page](https://github.com/FromSoft-Modding-Committee-FSMC/FSModTool/releases).
-
-# Features
+## Features
 
 * (KF2) Basic map editing with 3D preview, including editing entities and objects.
-* Game Database editing, enabling you to modify armor stats, object classes, spell attributes, player level data, and weapon stats.
-* (KF2 US ver.) Game Executable editing, allowing you to edit strings and shop info. 
+* (KF2) Game Database editing, enabling you to modify armor stats, object classes, spell attributes, player level data, and weapon stats.
+* (KF2 US ver.) Game Executable editing, allowing you to edit strings and shop info. (KF1U only so far)
 * Texture viewing, exporting and replacement
 * 3D model viewing (no support for animated KF1J models yet!)
+
+## Game support
 
 FSModTool currently supports loading files from the following games:
 
@@ -41,7 +38,7 @@ FSModTool currently supports loading files from the following games:
 * Shadow Tower [SLPS-01420, SLUS-00863]
 * Shadow Tower Demo from PlayStation Underground v2.4 [SCUS-94298]
 
-**BEWARE:** The main focus is still KF2. King's Field 3 maps will load but will have incorrect entity/sound/weapon names and missing objects since we haven't documented KF3 yet and the KF2 names are loaded instead. Support for all games except KF2 is only for loading model and texture files.
+As of writing, King's Field III maps will load but will have incorrect entity/sound/weapon names and missing objects since we haven't documented KF3 yet and the KF2 names are loaded instead. Support for all games except KF2 is only for loading model and texture files.
 
 # Credit where it's due
 This project could not have been written without TheStolenBattenberg's [Psycpros](https://github.com/TheStolenBattenberg/Psycpros) project.

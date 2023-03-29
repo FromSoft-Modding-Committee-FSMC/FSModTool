@@ -1,15 +1,26 @@
 <RCC>
     <qresource prefix="/">
+        <file>filelists/kf1.csv</file>
+        <file>filelists/kf2_cd.csv</file>
+        <file>filelists/kf2_gameexe.csv</file>
+        <file>filelists/kf2_op_e.csv</file>
+        <file>filelists/kf2_op_j.csv</file>
+        <file>filelists/kf2_op_u.csv</file>
+        <file>icons/armour_icon.png</file>
         <file>icons/3d_icon.png</file>
         <file>icons/db_icon.png</file>
         <file>icons/folder_icon.png</file>
         <file>icons/gameexe_icon.png</file>
+        <file>icons/levelcurve_icon.png</file>
+        <file>icons/magic_icon.png</file>
         <file>icons/map_icon.png</file>
+        <file>icons/objclass_icon.png</file>
         <file>icons/sndbody_icon.png</file>
         <file>icons/sndhead_icon.png</file>
         <file>icons/tex_icon.png</file>
         <file>icons/tfile_icon.png</file>
         <file>icons/unk_icon.png</file>
+        <file>icons/weapon_icon.png</file>
         <file>checker.png</file>
         <file>KFModTool.ico</file>
         <file>KFModTool.png</file>

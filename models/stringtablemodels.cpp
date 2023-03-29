@@ -1,7 +1,7 @@
 #include "stringtablemodels.h"
-#include "kf2/magic.h"
-#include "kf2/object.h"
-#include "kf2/text.h"
+#include "types/kf2/magic.h"
+#include "types/kf2/object.h"
+#include "types/kf2/text.h"
 #include <cstring>
 
 // Codec for the table models
@@ -216,7 +216,7 @@ QVariant MagicStringsTableModel::headerData(int section, Qt::Orientation orienta
 
     //if (orientation == Qt::Vertical):
 
-    return KF2::getMagicIDName(static_cast<KF2::MagicID>(section));
+    return KF2::getMagicName(static_cast<KF2::MagicID>(section));
 }
 
 bool MagicStringsTableModel::setData(const QModelIndex& index, const QVariant& value, int role) {}

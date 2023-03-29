@@ -67,8 +67,6 @@ private slots:
 
     void on_filesTree_doubleClicked(const QModelIndex& index);
 
-    void on_filesTree_clicked(const QModelIndex& index);
-
 private:
     Ui::MainWindow* ui;
 

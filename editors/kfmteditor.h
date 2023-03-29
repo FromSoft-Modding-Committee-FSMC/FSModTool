@@ -16,7 +16,11 @@ public:
     }
     virtual ~KFMTEditor() { saveChanges(); }
 
-    void saveChanges() { handler->saveChanges(); }
+    void saveChanges()
+    {
+        if (handler)
+            handler->saveChanges();
+    }
 
 protected:
     std::unique_ptr<KFMTDataHandler> handler;

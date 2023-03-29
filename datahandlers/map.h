@@ -3,10 +3,10 @@
 
 #include "core/kfmterror.h"
 #include "datahandlers/kfmtdatahandler.h"
-#include "kf2/entity.h"
-#include "kf2/object.h"
-#include "kf2/tile.h"
-#include "kf2/vfx.h"
+#include "types/kf2/entity.h"
+#include "types/kf2/object.h"
+#include "types/kf2/tile.h"
+#include "types/kf2/vfx.h"
 #include <QMessageBox>
 
 class Map : public KFMTDataHandler

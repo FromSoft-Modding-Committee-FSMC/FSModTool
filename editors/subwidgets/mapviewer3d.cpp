@@ -144,8 +144,8 @@ void MapViewer3D::buildShader()
 
 void MapViewer3D::buildTileset()
 {
-    const auto index = map->getFile().indexInContainer();
-    auto rtmd = Model(*core.getFile(u"RTMD.T", index / 3));
+    const auto index = map->getFile().name().toUInt();
+    auto rtmd = Model(*core.files[QStringLiteral(u"CD/COM/RTMD.T/%1").arg(index / 3)]);
 
     tileset.reserve(rtmd.baseObjects.size());
 
@@ -286,20 +286,20 @@ void MapViewer3D::buildVRAM()
     switch (core.currentGame())
     {
         case KFMTCore::SimpleGame::KF2:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 27));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(27)]);
             break;
         case KFMTCore::SimpleGame::KF3:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 84));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(84)]);
             break;
         case KFMTCore::SimpleGame::KFPS:
-            textureDBs.emplace_back(*core.getFile(u"FDAT.T", 81));
+            textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/FDAT.T/%1").arg(81)]);
             break;
         default: break;
     }
 
     // We also load appropriate subtextures
-    const auto index = map->getFile().indexInContainer();
-    textureDBs.emplace_back(*core.getFile(u"RTIM.T", index / 3));
+    const auto index = map->getFile().name().toUInt();
+    textureDBs.emplace_back(*core.files[QStringLiteral(u"CD/COM/RTIM.T/%1").arg(index / 3)]);
 
     QImage image({4096, 512}, QImage::Format::Format_RGBA8888);
     QPainter imagePainter(&image);

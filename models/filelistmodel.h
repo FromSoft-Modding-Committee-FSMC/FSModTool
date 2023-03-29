@@ -1,7 +1,7 @@
 #ifndef FILELISTMODEL_H
 #define FILELISTMODEL_H
 
-#include "core/kfmtcore.h"
+#include "core/kfmtfile.h"
 #include "core/kfmterror.h"
 #include <QAbstractItemModel>
 #include <QFileDialog>
