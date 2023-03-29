@@ -72,6 +72,7 @@ HEADERS += \
     models/kf2/kf2_levelcurvetablemodel.h \
     models/kf2/kf2_magicparamstablemodel.h \
     models/kf2/kf2_objectclassestablemodel.h \
+    models/kf2/kf2_soundeffectparamstablemodel.h \
     models/kf2/kf2_weaponparamstablemodel.h \
     models/entityclasslistmodel.h \
     models/entityclasstablemodel.h \
@@ -142,6 +143,7 @@ SOURCES += \
     models/kf2/kf2_levelcurvetablemodel.cpp \
     models/kf2/kf2_magicparamstablemodel.cpp \
     models/kf2/kf2_objectclassestablemodel.cpp \
+    models/kf2/kf2_soundeffectparamstablemodel.cpp \
     models/kf2/kf2_weaponparamstablemodel.cpp \
     models/entityclasslistmodel.cpp \
     models/entityclasstablemodel.cpp \

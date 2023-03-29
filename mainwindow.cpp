@@ -8,6 +8,7 @@
 #include "models/kf2/kf2_levelcurvetablemodel.h"
 #include "models/kf2/kf2_magicparamstablemodel.h"
 #include "models/kf2/kf2_objectclassestablemodel.h"
+#include "models/kf2/kf2_soundeffectparamstablemodel.h"
 #include "models/kf2/kf2_weaponparamstablemodel.h"
 #include <QFileDialog>
 #include <iostream>
@@ -104,6 +105,12 @@ void MainWindow::on_filesTree_doubleClicked(const QModelIndex& index)
                                            this);
             icon = &Icons::objClass;
             break;
+        case KFMTFile::DataType::KF2_SoundEffectParams:
+            editor = new SimpleTableEditor(*file,
+                                           new KF2::Models::SoundEffectParamsTableModel(*file),
+                                           this);
+            icon = &Icons::soundbankHeader;
+        break;
         case KFMTFile::DataType::KF2_WeaponParams:
             editor = new SimpleTableEditor(*file,
                                            new KF2::Models::WeaponParamsTableModel(*file),

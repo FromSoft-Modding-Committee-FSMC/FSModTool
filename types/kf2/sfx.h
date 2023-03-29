@@ -7,6 +7,8 @@
 namespace KF2
 {
 
+// Enums
+
 // Enum containing the IDs of common game sounds.
 enum class SoundID : uint8_t
 {
@@ -62,6 +64,17 @@ enum class SoundID : uint8_t
     ActualWaterFall=239,
     None=255
 };
+
+// Structs
+
+struct SoundEffectParams
+{
+    int16_t vabID;
+    int16_t programIndex;
+    int16_t toneIndex;
+    int16_t pitch;
+    int16_t unknown0x08;
+} __attribute__((packed, aligned(1)));
 
 QString getSoundName(const SoundID soundId);
 

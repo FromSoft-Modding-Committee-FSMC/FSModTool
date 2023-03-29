@@ -112,6 +112,7 @@ QVariant FileListModel::data(const QModelIndex &index, int role) const
             return Icons::model;
         case KFMTFile::DataType::SoundBankBody:
             return Icons::soundbankBody;
+        case KFMTFile::DataType::KF2_SoundEffectParams: [[fallthrough]];
         case KFMTFile::DataType::SoundBankHeader:
             return Icons::soundbankHeader;
         case KFMTFile::DataType::TextureDB:
