@@ -1,5 +1,7 @@
 # FSModTool
 
+![FSModTool screenshot](wiki/kfmodtool.png)
+
 FSModTool is a datamining and modding tool for From Software's PlayStation-era titles, previously known as KFModTool as part of the KingsFieldRE project. It was built with focus on King's Field II, but has some preliminary support for other games as well.
 
 This is the fruit of the community's efforts in understanding how these games work and is here in the hopes that it might provide help to those who are interested in helping reverse engineer From Software's early games.
