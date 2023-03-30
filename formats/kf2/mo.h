@@ -109,6 +109,8 @@ public:
                 while(vertYorNum > 0)
                 {
                     newTarget[vertexCount] = baseTarget[vertexCount];
+
+                    vertYorNum--;
                     vertexCount++;
                 }
 
