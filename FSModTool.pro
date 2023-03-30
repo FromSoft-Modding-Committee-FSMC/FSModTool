@@ -24,14 +24,18 @@ QMAKE_CFLAGS += $$(CFLAGS) -isystem $$[QT_INSTALL_HEADERS]
 QMAKE_CXXFLAGS += $$(CXXFLAGS) -isystem $$[QT_INSTALL_HEADERS]
 
 # Supress warnings for Qt stuff
-QMAKE_CFLAGS += -isystem "$$[QT_INSTALL_HEADERS]/qt5" -isystem "$$[QT_INSTALL_HEADERS]/qt5/QtWidgets" \
-                -isystem "$$[QT_INSTALL_HEADERS]/QtXml" -isystem "/usr/include/qt5/QtGui" \
-                -isystem "$$[QT_INSTALL_HEADERS]/QtCore"
-QMAKE_CXXFLAGS += -isystem "$$[QT_INSTALL_HEADERS]/qt5" -isystem "$$[QT_INSTALL_HEADERS]/qt5/QtWidgets" \
-                  -isystem "$$[QT_INSTALL_HEADERS]/QtXml" -isystem "/usr/include/qt5/QtGui" \
-                  -isystem "$$[QT_INSTALL_HEADERS]/QtCore"
+QMAKE_CFLAGS += -isystem "$$[QT_INSTALL_HEADERS]/QtWidgets" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtXml" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtGui" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtCore"
+
+QMAKE_CXXFLAGS += -isystem "$$[QT_INSTALL_HEADERS]/QtWidgets" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtXml" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtGui" \
+    -isystem "$$[QT_INSTALL_HEADERS]/QtCore"
 
 HEADERS += \
+    formats/kf2/mo.h \
     libimagequant/blur.h \
     libimagequant/kmeans.h \
     libimagequant/libimagequant.h \
@@ -90,8 +94,6 @@ HEADERS += \
     models/texturelistmodel.h \
     models/tilecontentslistmodel.h \
     models/vfxinstancetablemodel.h \
-    platform/psx/sdk/fixedp.h \
-    platform/psx/sdk/libgte.h \
     types/kf1/levelcurveentry.h \
     types/kf2/armourparams.h \
     types/kf2/entity.h \

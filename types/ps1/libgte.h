@@ -12,6 +12,8 @@ struct SVECTOR
     int16_t vy;
     int16_t vz;
     int16_t pad;
+
+    SVECTOR(int16_t x, int16_t y, int16_t z, int16_t w) : vx(x), vy(y), vz(z), pad(w) { }
 };
 
 struct VECTOR
