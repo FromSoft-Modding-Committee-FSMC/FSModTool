@@ -2,15 +2,18 @@ QT += 3danimation 3dcore 3dinput 3dlogic 3drender  core gui widgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += 
 
-# Use the GitHub Actions run ID
-RUNID = $$(GITHUB_RUN_NUMBER)
+# Identify the app version.
+# Priority: GitHub Tag -> Local Git Branch-Hash -> Fallback
+RUNID = $$(GITHUB_REF_NAME)
 
-!isEmpty(RUNID) {
-    DEFINES += "RUNID=\\\"$$RUNID\\\""
-}
 isEmpty(RUNID) {
-    DEFINES += "RUNID=\\\"DEVELOPMENT\\\""
+    GIT_BRANCH = $$system(git rev-parse --abbrev-ref HEAD)
+    GIT_HASH = $$system(git rev-parse --short HEAD)
+    !isEmpty(GIT_BRANCH):!isEmpty(GIT_HASH): RUNID = "$$GIT_BRANCH-$$GIT_HASH"
 }
+
+isEmpty(RUNID): RUNID = DEVELOPMENT
+DEFINES += "RUNID=\\\"$$RUNID\\\""
 
 # Set C++ to latest standard
 CONFIG += c++latest
@@ -90,8 +93,6 @@ HEADERS += \
     models/texturelistmodel.h \
     models/tilecontentslistmodel.h \
     models/vfxinstancetablemodel.h \
-    platform/psx/sdk/fixedp.h \
-    platform/psx/sdk/libgte.h \
     types/kf1/levelcurveentry.h \
     types/kf2/armourparams.h \
     types/kf2/entity.h \
@@ -192,3 +193,48 @@ DISTFILES += \
     litStatic.vert \
     unlitSimple.frag \
     unlitSimple.vert
+
+CONFIG(release, debug|release):win32 {
+    QMAKE_SH = 
+    DIST_DIR = $$OUT_PWD/dist
+    PACKAGE_FILE = $$OUT_PWD/../$${TARGET}_Release.zip
+    EXE_NAME = $${TARGET}.exe
+    BUILD_PATH = $$OUT_PWD/release/$$EXE_NAME
+    DIST_PATH = $$DIST_DIR/$$EXE_NAME
+
+    CLEAN_CMD  = if exist $$shell_quote($$shell_path($$DIST_DIR)) rmdir /s /q $$shell_quote($$shell_path($$DIST_DIR))
+    MKDIR_CMD  = mkdir $$shell_quote($$shell_path($$DIST_DIR))
+    COPY_CMD   = copy /y $$shell_quote($$shell_path($$BUILD_PATH)) $$shell_quote($$shell_path($$DIST_PATH))
+    DEPLOY_CMD = $$shell_quote($$shell_path($$[QT_INSTALL_BINS]/windeployqt.exe)) --compiler-runtime $$shell_quote($$shell_path($$DIST_PATH))
+    ZIP_CMD = cd /d $$shell_quote($$shell_path($$DIST_DIR)) && tar -a -cf $$shell_quote($$shell_path($$PACKAGE_FILE)) *
+
+    QMAKE_POST_LINK = $$CLEAN_CMD && $$MKDIR_CMD && $$COPY_CMD && $$DEPLOY_CMD && $$ZIP_CMD
+}
+
+CONFIG(release, debug|release):macx {
+    DIST_DIR = $$OUT_PWD/dist
+    PACKAGE_FILE = $$OUT_PWD/../$${TARGET}_Release.zip
+    EXE_NAME = $${TARGET}.app
+    BUILD_PATH = $$OUT_PWD/$$EXE_NAME
+    DIST_PATH = $$DIST_DIR/$$EXE_NAME
+
+    CLEAN_CMD = rm -rf $$shell_quote($$shell_path($$DIST_DIR))
+    MKDIR_CMD = mkdir -p $$shell_quote($$shell_path($$DIST_DIR))
+    COPY_CMD = cp -R $$shell_quote($$shell_path($$BUILD_PATH)) $$shell_quote($$shell_path($$DIST_PATH))
+    DEPLOY_CMD = $$shell_quote($$shell_path($$[QT_INSTALL_BINS]/macdeployqt)) $$shell_quote($$shell_path($$DIST_PATH))
+    ZIP_CMD = cd $$shell_quote($$shell_path($$DIST_DIR)) && zip -r -y $$shell_quote($$shell_path($$PACKAGE_FILE)) .
+
+    QMAKE_POST_LINK = $$CLEAN_CMD && $$MKDIR_CMD && $$COPY_CMD && $$DEPLOY_CMD && $$ZIP_CMD
+}
+
+CONFIG(release, debug|release):unix:!macx:!android {
+    DIST_DIR = $$OUT_PWD/dist
+    PACKAGE_FILE = $$OUT_PWD/../$${TARGET}_Release.tar.gz
+
+    CLEAN_CMD = rm -rf $$shell_quote($$shell_path($$DIST_DIR))
+    MKDIR_CMD = mkdir -p $$shell_quote($$shell_path($$DIST_DIR))
+    COPY_CMD = cp $$shell_quote($$shell_path($$OUT_PWD/$$TARGET)) $$shell_quote($$shell_path($$DIST_DIR/))
+    TAR_CMD = cd $$shell_quote($$shell_path($$DIST_DIR)) && tar -czf $$shell_quote($$shell_path($$PACKAGE_FILE)) *
+
+    QMAKE_POST_LINK = $$CLEAN_CMD && $$MKDIR_CMD && $$COPY_CMD && $$TAR_CMD
+}

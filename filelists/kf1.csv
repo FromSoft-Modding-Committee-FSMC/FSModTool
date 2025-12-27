@@ -1,6 +1,7 @@
 FSMTFileList,v,0,1
 FILES,,,
 Path,FileType,DataType,PrettyName
+KF,Folder,Container,
 KF/B0,Folder,Container,
 KF/B0/END,Raw,MusicSequence,Epilogue
 KF/B0/ENDG,Raw,MusicSequence,Ending

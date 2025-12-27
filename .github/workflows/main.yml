@@ -1,258 +1,120 @@
-name: Build all projects
+name: Build and Release
 
 on:
   push:
-    branches: [ master ]
-    paths-ignore:
-      - '**.md'
-      - '**.png'
-      - "**.txt"
-  pull_request:
-    branches: [ master ]
+    tags:
+      - 'r*' # Only triggers when you push a tag starting with 'r' (e.g. r140)
+
+permissions:
+  contents: write
 
 jobs:
-  linux-build:
-    runs-on: ubuntu-18.04
+  build:
+    name: Build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            qt_arch: win64_mingw81
+          - os: ubuntu-22.04
+            qt_arch: gcc_64
+          - os: macos-15-intel
+            qt_arch: clang_64
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
-      with:
-        submodules: 'recursive'
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
 
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v2
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v3
+        with:
+          aqtversion: '==3.1.*'
+          version: '5.15.2'
+          tools: ${{ runner.os == 'Windows' && 'tools_mingw81' || '' }}
+          arch: ${{ matrix.qt_arch }}
+          modules: 'qtquick3d'
 
-    - name: Install libxcb stuff
-      run: |
-        sudo apt install -y libxcb*
+      - name: Build Project (Windows)
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: |
+          mkdir build_assets
+          cd build_assets
+          set PATH=%IQTA_TOOLS%/mingw810_64/bin;%PATH%
+          qmake ..\FSModTool.pro CONFIG+=release
+          mingw32-make -j2
 
-    - name: Get linuxdeployqt
-      run: | 
-        wget "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage" -P ~/
-        chmod +x ~/linuxdeployqt-continuous-x86_64.AppImage
-      
-    - name: Build checksum_tool
-      run: |
-        cd Tools/checksum_tool
-        qmake
-        make -j2
-        cd ..
+      - name: Build Project (Unix)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          mkdir build_assets
+          cd build_assets
+          qmake ../FSModTool.pro CONFIG+=release
+          if [ "$RUNNER_OS" == "macOS" ]; then
+            make -j$(sysctl -n hw.ncpu)
+          else
+            make -j$(nproc)
+          fi
 
-    - name: Build KFModTool
-      continue-on-error: true
-      run: |
-      
-        cd Tools/KFModTool
-        qmake
-        make -j2
-        cd ..
+      - name: Package Windows (win64)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: mv FSModTool_Release.zip FSModTool-${{ github.ref_name }}-windows-x86_64.zip
 
-    - name: Build KFRandomizer
-      run: |
-        cd Tools/KFRandomizer
-        qmake
-        make -j2
-        cd ..
-        
-    - name: Build tfile_tool
-      run: |
-        cd Tools/tfile_tool
-        qmake
-        make -j2
-        cd ..
+      - name: Package Linux (lin64 & AppImage)
+        if: runner.os == 'Linux'
+        shell: bash
+        env: 
+          APPIMAGE_EXTRACT_AND_RUN: 1
+        run: |
+          sudo apt-get update && sudo apt-get install -y libxcb-util1 zip imagemagick
+          mv FSModTool_Release.tar.gz FSModTool-${{ github.ref_name }}-linux-x86_64.tar.gz
+          #AppImage
+          convert KFModTool.ico[0] build_assets/FSModTool.png
+          wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
+          chmod a+x linuxdeployqt-continuous-x86_64.AppImage
+          echo -e "[Desktop Entry]\nType=Application\nName=FSModTool\nExec=FSModTool\nIcon=FSModTool\nCategories=Development;" > build_assets/FSModTool.desktop
+          cd build_assets
+          export VERSION=${{ github.ref_name }}
+          ../linuxdeployqt-continuous-x86_64.AppImage FSModTool -appimage -unsupported-allow-new-glibc
+          cd ..
+          mv build_assets/FSModTool-*-x86_64.AppImage FSModTool-${{ github.ref_name }}-x86_64.AppImage
+          zip FSModTool-${{ github.ref_name }}-x86_64-AppImage.zip FSModTool-${{ github.ref_name }}-x86_64.AppImage
 
-    - name: Deploy checksum_tool AppImage
-      run: |
-        cd Tools/checksum_tool
-        ~/linuxdeployqt-continuous-x86_64.AppImage checksum_tool -appimage 
+      - name: Package macOS (mac64)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: mv FSModTool_Release.zip FSModTool-${{ github.ref_name }}-macos-x86_64.zip
 
-    - name: Upload checksum_tool build
-      uses: actions/upload-artifact@v2
-      with:
-        name: checksum_tool Linux (64-bit) AppImage
-        path: Tools/checksum_tool/checksum_tool*.AppImage
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: assets-${{ matrix.os }}
+          path: |
+            FSModTool-*.zip
+            FSModTool-*.tar.gz
 
-    - name: Deploy KFModTool AppImage
-      run: |
-        cd Tools/KFModTool
-        ~/linuxdeployqt-continuous-x86_64.AppImage KFModTool -appimage 
-
-    - name: Upload KFModTool build
-      continue-on-error: true
-      uses: actions/upload-artifact@v2
-      with:
-        name: KFModTool Linux (64-bit) AppImage
-        path: Tools/KFModTool/KFModTool*.AppImage
-
-    - name: Deploy KFRandomizer AppImage
-      run: |
-        cd Tools/KFRandomizer
-        ~/linuxdeployqt-continuous-x86_64.AppImage KFRandomizer -appimage 
-
-    - name: Upload KFRandomizer build
-      uses: actions/upload-artifact@v2
-      with:
-        name: KFRandomizer Linux (64-bit) AppImage
-        path: Tools/KFRandomizer/KFRandomizer*.AppImage
-
-    - name: Deploy tfile_tool AppImage
-      run: |
-        cd Tools/tfile_tool
-        ~/linuxdeployqt-continuous-x86_64.AppImage tfile_tool -appimage 
-        
-    - name: Upload tfile_tool build
-      uses: actions/upload-artifact@v2
-      with:
-        name: tfile_tool Linux (64-bit) AppImage
-        path: Tools/tfile_tool/tfile_tool*.AppImage
-
-  windows-build:
-    runs-on: 	windows-latest
-    
-    steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
-      with:
-        submodules: 'recursive'
-
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v2
-      with:
-        arch: win64_mingw81
-
-    - name: Build checksum_tool
-      run: |
-        cd Tools\checksum_tool
-        qmake
-        make -j2
-        cd ..
-
-    - name: Build KFModTool
-      continue-on-error: true
-      run: |
-        cd Tools\KFModTool
-        qmake
-        make -j2
-        cd ..
-
-    - name: Build KFRandomizer
-      run: |
-        cd Tools\KFRandomizer
-        qmake
-        make -j2
-        cd ..
-        
-    - name: Build tfile_tool
-      run: |
-        cd Tools\tfile_tool
-        qmake
-        make -j2
-        cd ..
-
-    - name: Deploy checksum_tool
-      run : |
-        cd Tools\checksum_tool\release
-        windeployqt --compiler-runtime checksum_tool.exe
-        del *.o
-        del *.cpp
-        del *.h
-        cp $env:Qt5_Dir\bin\libgcc_s_seh-1.dll .
-        cp $env:Qt5_Dir\bin\libstdc++-6.dll .
-        cp $env:Qt5_Dir\bin\libwinpthread-1.dll .
-        cd ..
-        ren release checksum_tool
-        tar.exe -a -c -f "checksum_tool Windows (64-bit) build.zip" checksum_tool
-
-    - name: Upload checksum_tool build
-      uses: actions/upload-artifact@v2
-      with:
-        name: checksum_tool Windows (64-bit) build
-        path: 'Tools\checksum_tool\checksum_tool Windows (64-bit) build.zip'
-
-    - name: Deploy KFModTool
-      continue-on-error: true
-      run : |
-        cd Tools\KFModTool\release
-        windeployqt --compiler-runtime KFModTool.exe
-        del *.o
-        del *.cpp
-        del *.h
-        cp $env:Qt5_Dir\bin\libgcc_s_seh-1.dll .
-        cp $env:Qt5_Dir\bin\libstdc++-6.dll .
-        cp $env:Qt5_Dir\bin\libwinpthread-1.dll .
-        cd ..
-        ren release KFModTool
-        tar.exe -a -c -f "KFModTool Windows (64-bit) build.zip" KFModTool
-        
-    - name: Upload KFModTool build
-      continue-on-error: true
-      uses: actions/upload-artifact@v2
-      with:
-        name: KFModTool Windows (64-bit) build
-        path: 'Tools\KFModTool\KFModTool Windows (64-bit) build.zip'
-
-    - name: Deploy KFRandomizer
-      run : |
-        cd Tools\KFRandomizer\release
-        windeployqt --compiler-runtime KFRandomizer.exe
-        del *.o
-        del *.cpp
-        del *.h
-        cp $env:Qt5_Dir\bin\libgcc_s_seh-1.dll .
-        cp $env:Qt5_Dir\bin\libstdc++-6.dll .
-        cp $env:Qt5_Dir\bin\libwinpthread-1.dll .
-        cd ..
-        ren release KFRandomizer
-        tar.exe -a -c -f "KFRandomizer Windows (64-bit) build.zip" KFRandomizer
-        
-    - name: Upload KFRandomizer build
-      uses: actions/upload-artifact@v2
-      with:
-        name: KFRandomizer Windows (64-bit) build
-        path: 'Tools\KFRandomizer\KFRandomizer Windows (64-bit) build.zip'
-
-    - name: Deploy tfile_tool
-      run : |
-        cd Tools\tfile_tool\release
-        windeployqt --compiler-runtime tfile_tool.exe
-        del *.o
-        del *.cpp
-        del *.h
-        cp $env:Qt5_Dir\bin\libgcc_s_seh-1.dll .
-        cp $env:Qt5_Dir\bin\libstdc++-6.dll .
-        cp $env:Qt5_Dir\bin\libwinpthread-1.dll .
-        cd ..
-        ren release tfile_tool
-        tar.exe -a -c -f "tfile_tool Windows (64-bit) build.zip" tfile_tool
-        cd ../..
-        
-    - name: Upload tfile_tool build
-      uses: actions/upload-artifact@v2
-      with:
-        name: tfile_tool Windows (64-bit) build
-        path: 'Tools\tfile_tool\tfile_tool Windows (64-bit) build.zip'
-
-  # This is practically copied from DuckStation's GitHub Actions workflow.
   create-release:
-    needs: [linux-build, windows-build]
+    needs: [build]
     runs-on: ubuntu-latest
-    
     steps:
-     - name: "Download all artifacts"
-       uses:  actions/download-artifact@v2
-    
-     - name: "tree for debugging"
-       run: |
-          sudo apt install tree
-          tree
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release_assets
+          merge-multiple: true
 
-     - name: "Create release"
-       uses: "marvinpinto/action-automatic-releases@latest"
-       with:
-         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-         automatic_release_tag: "r${{ github.run_number }}"
-         prerelease: false
-         title: "KingsFieldRE r${{ github.run_number }}"
-         files: |
-           */*
+      - name: Create GitHub Release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ github.ref_name }}"
+          prerelease: false
+          title: "FSModTool ${{ github.ref_name }}"
+          files: |
+            release_assets/FSModTool-*

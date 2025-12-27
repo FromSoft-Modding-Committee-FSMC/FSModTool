@@ -36,7 +36,7 @@
       <item>
        <widget class="QLabel" name="githubLabel">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A project of The FromSoft Modding Committee. Visit us on GitHub at: &lt;a href=&quot;https://github.com/IvanDSM/KingsFieldRE&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/IvanDSM/KingsFieldRE&lt;/span&gt;&lt;/a&gt;!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A project of The FromSoft Modding Committee. Visit us on GitHub at: &lt;a href=&quot;https://github.com/FromSoft-Modding-Committee-FSMC&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/FromSoft-Modding-Committee-FSMC&lt;/span&gt;&lt;/a&gt;!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="openExternalLinks">
          <bool>true</bool>

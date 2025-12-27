@@ -136,9 +136,18 @@ KFMTFile::FileFormat KFMTCore::parseFileFormat(const QString& fileTypeStr)
     else if (fileTypeStr == QStringLiteral("MIX")) return KFMTFile::FileFormat::MIX;
     else if (fileTypeStr == QStringLiteral("Raw")) return KFMTFile::FileFormat::Raw;
     else if (fileTypeStr == QStringLiteral("T")) return KFMTFile::FileFormat::T;
-
-    fsmt_assert(false, "KFMTCore::parseFileFormat: File had unknown file format.");
-}
+    else if (fileTypeStr == QStringLiteral("MIMList"))
+    {
+        static bool warned = false;
+        if (!warned) {
+            KFMTError::warning(QStringLiteral("Support for type %1 is does not currently exist. ").arg(fileTypeStr));
+            warned = true;
+        }
+        // Return Raw as a fallback so the app doesn't crash
+        return KFMTFile::FileFormat::Raw;
+    }
+    fsmt_assert((KFMTError::warning(QStringLiteral("KFMTCore::parseFileFormat: Unknown format '%1'").arg(fileTypeStr)), false),
+                "KFMTCore::parseFileFormat: File had unknown file format.");}
 
 void KFMTCore::loadFileList(const QString& fileList)
 {
@@ -173,6 +182,10 @@ void KFMTCore::loadFileList(const QString& fileList)
             for (auto i = 0; i < path.size() - 1; i++)
             {
                 parent = (*parent)[path[i]];
+                if (parent == nullptr)
+                {
+                    KFMTError::warning(QString("Failed to find parent for path: %1, looking for: %2").arg(line[0]).arg(path[i]));
+                }
                 fsmt_assert(parent != nullptr, "KFMTCore::loadFileList: Couldn't find file parent!");
             }
         }
